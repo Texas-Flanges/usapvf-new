@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Louisiana Flange - Trusted Flange Manufacturer | USA PVF",
-  description: "Louisiana Flange proudly supplies quality flanges across Louisiana. Custom flanges, quick turnaround, and local support since 1986. Get a quote today.",
-  keywords: ["Louisiana flange", "flange manufacturer", "custom flanges", "industrial flanges", "USA PVF", "pipe flanges", "weld neck flanges", "slip-on flanges"],
+  title: "USA PVF - Trusted Flange Manufacturer | USA PVF",
+  description: "USA PVF proudly supplies quality flanges across USA. Custom flanges, quick turnaround, and local support since 1986. Get a quote today.",
+  keywords: ["USA PVF", "flange manufacturer", "custom flanges", "industrial flanges", "USA PVF", "pipe flanges", "weld neck flanges", "slip-on flanges"],
   openGraph: {
-    title: "Louisiana Flange - Trusted Flange Manufacturer",
-    description: "Supplying quality flanges across Louisiana with passion and precision since 1986.",
+    title: "USA PVF - Trusted Flange Manufacturer",
+    description: "Supplying quality flanges across USA with passion and precision since 1986.",
     url: "https://usapvf.com",
-    siteName: "Louisiana Flange",
+    siteName: "USA PVF",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Louisiana Flange - Trusted Flange Manufacturer",
-    description: "Supplying quality flanges across Louisiana with passion and precision since 1986.",
+    title: "USA PVF - Trusted Flange Manufacturer",
+    description: "Supplying quality flanges across USA with passion and precision since 1986.",
   },
   alternates: {
     canonical: "https://usapvf.com",
@@ -37,7 +37,7 @@ export default function Home() {
 
       {/* Navigation */}
       <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 40px", backgroundColor: "#fff", borderBottom: "1px solid #e5e7eb", position: "sticky", top: 0, zIndex: 50 }}>
-        <a href="/" style={{ fontSize: "22px", fontWeight: 700, color: "#1a1a2e", textDecoration: "none" }}>Louisiana Flange</a>
+        <a href="/" style={{ fontSize: "22px", fontWeight: 700, color: "#1a1a2e", textDecoration: "none" }}>USA PVF</a>
         <div style={{ display: "flex", gap: "28px", alignItems: "center" }}>
           <a href="/" style={{ color: "#1a1a2e", textDecoration: "none", fontWeight: 500 }}>Home</a>
           <a href="/products" style={{ color: "#555", textDecoration: "none" }}>Products</a>
@@ -64,10 +64,10 @@ export default function Home() {
         }}
       >
         <h1 style={{ fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 700, marginBottom: "20px", lineHeight: 1.1 }}>
-          Louisiana Flange<br />Proudly Built
+          USA PVF<br />Proudly Built
         </h1>
         <p style={{ fontSize: "clamp(16px, 2vw, 20px)", maxWidth: "600px", marginBottom: "40px", opacity: 0.9 }}>
-          Supplying quality flanges across Louisiana with passion and precision
+          Supplying quality flanges across USA with passion and precision
         </p>
         <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
           <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 36px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px" }}>Get Quote</a>
@@ -81,7 +81,7 @@ export default function Home() {
           <div style={{ flex: "1 1 400px" }}>
             <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "20px" }}>Proudly Made in the South</h2>
             <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#444", marginBottom: "30px" }}>
-              At Louisiana Flange, we craft durable flanges with care, serving our local industries and cheering on LSU football every season.
+              At USA PVF, we craft durable flanges with care, serving our customers nationwide with commitment and excellence.
             </p>
             <div style={{ display: "flex", gap: "40px", flexWrap: "wrap", marginBottom: "30px" }}>
               <div>
@@ -156,7 +156,7 @@ export default function Home() {
           <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "40px", textAlign: "center" }}>Frequently Asked Questions</h2>
           {[
             { q: "What flanges do you offer?", a: "We supply weld neck, slip-on, blind, lap joint, socket weld, threaded, and many other industrial flanges and flange types." },
-            { q: "Do you serve Louisiana only?", a: "No, but we proudly supply flanges throughout Louisiana and across the United States." },
+            { q: "Do you serve USA only?", a: "Yes, we proudly supply flanges throughout the United States with quality and expertise." },
             { q: "Can you customize flange sizes?", a: "Absolutely, we tailor flange dimensions to meet your exact project specifications." },
             { q: "How do you ensure quality?", a: "Every flange undergoes rigorous inspection and testing to meet ASME and ANSI standards before leaving our facility." },
             { q: "What materials are used?", a: "Our flanges are made from premium carbon and stainless steel." },
@@ -172,8 +172,8 @@ export default function Home() {
       {/* Footer */}
       <footer style={{ padding: "40px", backgroundColor: "#1a1a2e", color: "#ccc", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#fff", marginBottom: "16px" }}>Louisiana Flange</h3>
-          <p style={{ marginBottom: "8px" }}>Serving Louisiana with quality flanges</p>
+          <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#fff", marginBottom: "16px" }}>USA PVF</h3>
+          <p style={{ marginBottom: "8px" }}>Serving USA with quality flanges</p>
           <p style={{ marginBottom: "8px" }}>
             Phone: <a href="tel:281-484-8325" style={{ color: "#8B9FD4", textDecoration: "none" }}>281-484-8325</a> | Fax: 281-484-8730
           </p>
@@ -184,7 +184,7 @@ export default function Home() {
             <a href="https://texasflange.com?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
             <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
           </p>
-          <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2025 Louisiana Flange. All rights reserved.</p>
+          <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2025 USA PVF. All rights reserved.</p>
         </div>
       </footer>
 
@@ -195,7 +195,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Louisiana Flange",
+            name: "USA PVF",
             url: "https://usapvf.com",
             telephone: "+1-281-484-8325",
             email: "sales@texasflange.com",

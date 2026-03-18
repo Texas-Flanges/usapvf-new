@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Work - Louisiana Flange Products | USA PVF",
-  description: "Flanges crafted with precision and care. Supplying durable flanges to Louisiana's oil and gas industries. See our projects and customer stories.",
-  keywords: ["Louisiana flange products", "industrial flanges", "oil and gas flanges", "custom flanges Louisiana", "flange testimonials"],
+  title: "Our Work - USA PVF Products | USA PVF",
+  description: "Flanges crafted with precision and care. Supplying durable flanges to USA's oil and gas industries. See our projects and customer stories.",
+  keywords: ["USA PVF products", "industrial flanges", "oil and gas flanges", "custom flanges USA", "flange testimonials"],
   openGraph: {
-    title: "Our Work - Louisiana Flange Products",
-    description: "Flanges crafted with precision and care for Louisiana industries.",
+    title: "Our Work - USA PVF Products",
+    description: "Flanges crafted with precision and care for USA industries.",
     url: "https://usapvf.com/products",
-    siteName: "Louisiana Flange",
+    siteName: "USA PVF",
     type: "website",
   },
   alternates: {
@@ -32,7 +32,7 @@ export default function ProductsPage() {
 
       {/* Navigation */}
       <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 40px", backgroundColor: "#fff", borderBottom: "1px solid #e5e7eb", position: "sticky", top: 0, zIndex: 50 }}>
-        <a href="/" style={{ fontSize: "22px", fontWeight: 700, color: "#1a1a2e", textDecoration: "none" }}>Louisiana Flange</a>
+        <a href="/" style={{ fontSize: "22px", fontWeight: 700, color: "#1a1a2e", textDecoration: "none" }}>USA PVF</a>
         <div style={{ display: "flex", gap: "28px", alignItems: "center" }}>
           <a href="/" style={{ color: "#555", textDecoration: "none" }}>Home</a>
           <a href="/products" style={{ color: "#1a1a2e", textDecoration: "none", fontWeight: 500 }}>Products</a>
@@ -70,14 +70,14 @@ export default function ProductsPage() {
       <section className="rv" style={{ padding: "80px 40px", backgroundColor: "#fff" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
           <div style={{ flex: "1 1 400px" }}>
-            <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "20px" }}>Louisiana Projects</h2>
+            <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "20px" }}>USA Projects</h2>
             <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#444", marginBottom: "30px" }}>
-              Supplying durable flanges to Louisiana&apos;s oil and gas industries, supporting LSU football season with pride.
+              Supplying durable flanges to USA's oil and gas industries, supporting regional excellence with pride.
             </p>
             <a href="https://texasflange.com?ref=usapvf/contact-us/" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "12px 32px", borderRadius: "6px", textDecoration: "none", fontWeight: 500, display: "inline-block" }}>Get Quote</a>
           </div>
           <div style={{ flex: "1 1 300px" }}>
-            <img src="/hero-flange.jpg" alt="Industrial flange for Louisiana oil and gas projects" style={{ width: "100%", borderRadius: "12px", objectFit: "cover", maxHeight: "400px" }} />
+            <img src="/hero-flange.jpg" alt="Industrial flange for USA oil and gas projects" style={{ width: "100%", borderRadius: "12px", objectFit: "cover", maxHeight: "400px" }} />
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function ProductsPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "12px" }}>Customer Stories</h2>
           <p style={{ fontSize: "17px", color: "#666", marginBottom: "50px" }}>
-            Local businesses in Louisiana rely on our flanges for quality and timely delivery every season.
+            Local businesses across USA rely on our flanges for quality and timely delivery every season.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px", textAlign: "left" }}>
             <div style={{ backgroundColor: "#fff", padding: "40px 30px", borderRadius: "12px", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
@@ -98,7 +98,7 @@ export default function ProductsPage() {
             </div>
             <div style={{ backgroundColor: "#fff", padding: "40px 30px", borderRadius: "12px", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
               <p style={{ fontSize: "17px", color: "#444", lineHeight: 1.7, fontStyle: "italic", marginBottom: "20px" }}>
-                &ldquo;Their flanges held up perfectly through our toughest projects in Louisiana&apos;s heat and humidity.&rdquo;
+                &ldquo;Their flanges held up perfectly through our toughest projects across demanding conditions.&rdquo;
               </p>
               <p style={{ fontWeight: 600, color: "#1a1a2e" }}>Jill R.</p>
             </div>
@@ -119,9 +119,9 @@ export default function ProductsPage() {
           <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "40px", textAlign: "center" }}>Frequently Asked Questions</h2>
           {[
             { q: "What flanges do you offer?", a: "We supply weld neck, slip-on, blind, lap joint, socket weld, threaded, and many other industrial flanges and flange types." },
-            { q: "Do you serve Louisiana only?", a: "No, but we proudly supply flanges throughout Louisiana." },
+            { q: "Do you serve USA only?", a: "No, but we proudly supply flanges throughout USA." },
             { q: "Can you customize flange sizes?", a: "Absolutely, we tailor flange dimensions to meet your exact project specifications." },
-            { q: "How do you ensure quality?", a: "We support LSU football and love our local community." },
+            { q: "How do you ensure quality?", a: "We maintain strict quality standards and love serving our customers nationwide." },
             { q: "What materials are used?", a: "Our flanges are made from premium carbon and stainless steel." },
           ].map((item, i) => (
             <div key={i} style={{ backgroundColor: "#fff", padding: "24px 30px", borderRadius: "8px", marginBottom: "12px", boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}>
@@ -135,8 +135,8 @@ export default function ProductsPage() {
       {/* Footer */}
       <footer style={{ padding: "40px", backgroundColor: "#1a1a2e", color: "#ccc", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#fff", marginBottom: "16px" }}>Louisiana Flange</h3>
-          <p style={{ marginBottom: "8px" }}>Serving Louisiana with quality flanges</p>
+          <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#fff", marginBottom: "16px" }}>USA PVF</h3>
+          <p style={{ marginBottom: "8px" }}>Serving USA with quality flanges</p>
           <p style={{ marginBottom: "8px" }}>
             Phone: <a href="tel:281-484-8325" style={{ color: "#8B9FD4", textDecoration: "none" }}>281-484-8325</a> | Fax: 281-484-8730
           </p>
@@ -147,7 +147,7 @@ export default function ProductsPage() {
             <a href="https://texasflange.com?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
             <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
           </p>
-          <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2025 Louisiana Flange. All rights reserved.</p>
+          <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2025 USA PVF. All rights reserved.</p>
         </div>
       </footer>
 
@@ -174,7 +174,7 @@ export default function ProductsPage() {
             "@type": "FAQPage",
             mainEntity: [
               { "@type": "Question", name: "What flanges do you offer?", acceptedAnswer: { "@type": "Answer", text: "We supply weld neck, slip-on, blind, lap joint, socket weld, threaded, and many other industrial flanges and flange types." }},
-              { "@type": "Question", name: "Do you serve Louisiana only?", acceptedAnswer: { "@type": "Answer", text: "No, but we proudly supply flanges throughout Louisiana." }},
+              { "@type": "Question", name: "Do you serve USA only?", acceptedAnswer: { "@type": "Answer", text: "No, but we proudly supply flanges throughout USA." }},
               { "@type": "Question", name: "Can you customize flange sizes?", acceptedAnswer: { "@type": "Answer", text: "Absolutely, we tailor flange dimensions to meet your exact project specifications." }},
               { "@type": "Question", name: "What materials are used?", acceptedAnswer: { "@type": "Answer", text: "Our flanges are made from premium carbon and stainless steel." }},
             ],
