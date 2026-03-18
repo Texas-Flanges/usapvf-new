@@ -37,7 +37,7 @@ export default function ProductsPage() {
           <a href="/" style={{ color: "#555", textDecoration: "none" }}>Home</a>
           <a href="/products" style={{ color: "#1a1a2e", textDecoration: "none", fontWeight: 500 }}>Products</a>
           <a href="/about" style={{ color: "#555", textDecoration: "none" }}>About</a>
-          <a href="https://texasflange.com/contact-us" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "10px 24px", borderRadius: "6px", textDecoration: "none", fontWeight: 500 }}>Get Quote</a>
+          <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "10px 24px", borderRadius: "6px", textDecoration: "none", fontWeight: 500 }}>Get Quote</a>
         </div>
       </nav>
 
@@ -74,7 +74,7 @@ export default function ProductsPage() {
             <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#444", marginBottom: "30px" }}>
               Supplying durable flanges to Louisiana&apos;s oil and gas industries, supporting LSU football season with pride.
             </p>
-            <a href="https://texasflange.com/contact-us/" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "12px 32px", borderRadius: "6px", textDecoration: "none", fontWeight: 500, display: "inline-block" }}>Get Quote</a>
+            <a href="https://texasflange.com?ref=usapvf/contact-us/" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "12px 32px", borderRadius: "6px", textDecoration: "none", fontWeight: 500, display: "inline-block" }}>Get Quote</a>
           </div>
           <div style={{ flex: "1 1 300px" }}>
             <img src="/hero-flange.jpg" alt="Industrial flange for Louisiana oil and gas projects" style={{ width: "100%", borderRadius: "12px", objectFit: "cover", maxHeight: "400px" }} />
@@ -110,7 +110,7 @@ export default function ProductsPage() {
       <section className="rv" style={{ padding: "80px 40px", backgroundColor: "#2D2B7F", textAlign: "center", color: "#fff" }}>
         <h2 style={{ fontSize: "36px", fontWeight: 700, marginBottom: "16px" }}>Get Connected</h2>
         <p style={{ fontSize: "18px", marginBottom: "30px", opacity: 0.9 }}>Get quotes or questions answered</p>
-        <a href="https://texasflange.com/contact-us/" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 40px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px", display: "inline-block" }}>Contact Us</a>
+        <a href="https://texasflange.com?ref=usapvf/contact-us/" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 40px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px", display: "inline-block" }}>Contact Us</a>
       </section>
 
       {/* FAQ Section */}
@@ -144,14 +144,28 @@ export default function ProductsPage() {
             Email: <a href="mailto:sales@texasflange.com" style={{ color: "#8B9FD4", textDecoration: "none" }}>sales@texasflange.com</a>
           </p>
           <p style={{ marginBottom: "8px" }}>
-            <a href="https://texasflange.com" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
-            <a href="https://texasflange.com/contact-us" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
+            <a href="https://texasflange.com?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
+            <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
           </p>
           <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2025 Louisiana Flange. All rights reserved.</p>
         </div>
       </footer>
 
-      {/* Structured Data */}
+      {/* Structured Data - Breadcrumb */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://usapvf.com" },
+              { "@type": "ListItem", position: 2, name: "Products", item: "https://usapvf.com/products" },
+            ],
+          }),
+        }}
+      />
+      {/* Structured Data - FAQ */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

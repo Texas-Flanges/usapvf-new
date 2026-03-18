@@ -46,7 +46,7 @@ export default function ContactPage() {
                 For detailed quotes and rush orders, please visit our main website or call our sales team directly.
                 We provide rapid response times for all inquiries.
               </p>
-              <a href="https://www.texasflange.com/contact-us/" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
+              <a href="https://www.texasflange.com?ref=usapvf/contact-us/" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
                 Request a Quote
               </a>
               <p className="mt-6 text-sm text-gray-600">
