@@ -42,7 +42,8 @@ export default function Home() {
           <a href="/" style={{ color: "#1a1a2e", textDecoration: "none", fontWeight: 500 }}>Home</a>
           <a href="/products" style={{ color: "#555", textDecoration: "none" }}>Products</a>
           <a href="/about" style={{ color: "#555", textDecoration: "none" }}>About</a>
-          <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "10px 24px", borderRadius: "6px", textDecoration: "none", fontWeight: 500 }}>Get Quote</a>
+          <a href="/blog" style={{ color: "#555", textDecoration: "none" }}>Blog</a>
+          <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "10px 24px", borderRadius: "6px", textDecoration: "none", fontWeight: 500 }}>Get Quote</a>
         </div>
       </nav>
 
@@ -70,8 +71,8 @@ export default function Home() {
           Supplying quality flanges across USA with passion and precision
         </p>
         <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
-          <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 36px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px" }}>Get Quote</a>
-          <a href="https://texasflange.com?ref=usapvf/about/" style={{ color: "#fff", padding: "14px 36px", textDecoration: "none", fontWeight: 500, fontSize: "16px", border: "2px solid rgba(255,255,255,0.5)", borderRadius: "30px" }}>Learn More</a>
+          <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 36px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px" }}>Get Quote</a>
+          <a href="https://texasflange.com/about/?ref=usapvf" style={{ color: "#fff", padding: "14px 36px", textDecoration: "none", fontWeight: 500, fontSize: "16px", border: "2px solid rgba(255,255,255,0.5)", borderRadius: "30px" }}>Learn More</a>
         </div>
       </section>
 
@@ -97,7 +98,7 @@ export default function Home() {
                 <div style={{ color: "#666", fontSize: "14px" }}>Years of Service</div>
               </div>
             </div>
-            <a href="https://texasflange.com?ref=usapvf/contact-us/" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "12px 32px", borderRadius: "6px", textDecoration: "none", fontWeight: 500, display: "inline-block" }}>Get Quote</a>
+            <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "12px 32px", borderRadius: "6px", textDecoration: "none", fontWeight: 500, display: "inline-block" }}>Get Quote</a>
           </div>
           <div style={{ flex: "1 1 300px" }}>
             <img src="/hero-flange.jpg" alt="Close-up of industrial valve flanges" style={{ width: "100%", borderRadius: "12px", objectFit: "cover", maxHeight: "400px" }} />
@@ -147,7 +148,7 @@ export default function Home() {
       <section className="rv" style={{ padding: "80px 40px", backgroundColor: "#2D2B7F", textAlign: "center", color: "#fff" }}>
         <h2 style={{ fontSize: "36px", fontWeight: 700, marginBottom: "16px" }}>Get Connected</h2>
         <p style={{ fontSize: "18px", marginBottom: "30px", opacity: 0.9 }}>Get quotes or questions answered</p>
-        <a href="https://texasflange.com?ref=usapvf/contact-us/" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 40px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px", display: "inline-block" }}>Contact Us</a>
+        <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 40px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px", display: "inline-block" }}>Contact Us</a>
       </section>
 
       {/* FAQ Section */}
@@ -181,8 +182,8 @@ export default function Home() {
             Email: <a href="mailto:sales@texasflange.com" style={{ color: "#8B9FD4", textDecoration: "none" }}>sales@texasflange.com</a>
           </p>
           <p style={{ marginBottom: "8px" }}>
-            <a href="https://texasflange.com?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
-            <a href="https://texasflange.com?ref=usapvf/contact-us" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
+            <a href="https://texasflange.com/?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
+            <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
           </p>
           <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2025 USA PVF. All rights reserved.</p>
         </div>
@@ -203,7 +204,7 @@ export default function Home() {
             parentOrganization: {
               "@type": "Organization",
               name: "Texas Flange",
-              url: "https://texasflange.com?ref=usapvf",
+              url: "https://texasflange.com/?ref=usapvf",
             },
           }),
         }}

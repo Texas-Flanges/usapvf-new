@@ -73,7 +73,7 @@ export default function BlogPage() {
       {/* Footer */}
       <footer style={{ padding: "40px", backgroundColor: "#111", color: "#ccc", textAlign: "center" }}>
         <p style={{ marginBottom: "8px" }}>
-          <a href="https://texasflange.com?ref=usapvf" style={{ color: "#93c5fd", textDecoration: "none" }}>Texas Flange</a> {" | "}
+          <a href="https://texasflange.com/?ref=usapvf" style={{ color: "#93c5fd", textDecoration: "none" }}>Texas Flange</a> {" | "}
           <a href="https://texasflange.com/contact-us?ref=usapvf" style={{ color: "#93c5fd", textDecoration: "none" }}>Request a Quote</a>
         </p>
         <p style={{ fontSize: "13px", color: "#888" }}>&copy; 2025 USA PVF. All rights reserved.</p>
