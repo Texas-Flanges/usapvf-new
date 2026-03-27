@@ -45,7 +45,7 @@ export function Footer() {
             <p className="text-gray-300">
               Website: <a href="https://texasflange.com/?ref=usapvf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">texasflange.com</a>
             </p>
-            <p className="text-gray-300 mt-2">Mon–Fri, 8 AM – 5 PM CST</p>
+            <p className="text-gray-300 mt-2">Mon-Fri, 8 AM - 5 PM CST</p>
           </div>
         </div>
 
