@@ -1,0 +1,18 @@
+import Link from "next/link";
+export const metadata = { title: "ASME B16.5 and B16.47 Flanges", description: "ASME B16.5 pipe flanges 1/2 through 24 inch and B16.47 Series A and B large diameter flanges 26 through 60 inch. Dimensions, pressure classes, and material grades." };
+export default function AsmePage() {
+  return (<>
+    <section className="bg-[#1B1F23] text-white py-20 px-4"><div className="max-w-4xl mx-auto"><Link href="/standards" className="text-gray-400 hover:text-[#DC2626] text-sm mb-6 inline-block">&larr; Standards</Link><h1 className="font-display text-5xl font-bold mb-6 text-white">ASME B16.5 and B16.47</h1><p className="text-xl text-gray-300 max-w-3xl leading-relaxed">The two ASME standards that cover the bulk of industrial pipe flange supply. B16.5 governs catalog sizes through 24 inch. B16.47 covers large diameter through 60 inch in two series. Together they cover most refinery, petrochemical, power, and chemical process flange work.</p></div></section>
+    <section className="bg-cream py-16 px-4"><div className="max-w-4xl mx-auto prose-content space-y-6">
+      <h2 className="font-display text-3xl font-bold text-ink">ASME B16.5</h2>
+      <p className="text-lg text-gray-700 leading-relaxed">B16.5 covers pipe flanges and flanged fittings in nominal pipe sizes 1/2 inch through 24 inch. Pressure classes are 150, 300, 400, 600, 900, 1500, and 2500. Each class is a numeric designator, not a pressure rating. Actual pressure-temperature ratings depend on the material grade and the operating temperature, tabulated in the standard as P-T tables.</p>
+      <p className="text-lg text-gray-700 leading-relaxed">Standard facings include raised face (RF), flat face (FF), ring-type joint (RTJ), tongue and groove (T&G), and large male and female (LMF). Standard flange types include weld neck, slip-on, blind, threaded, socket weld, lap joint, reducing, and orifice.</p>
+      <h2 className="font-display text-3xl font-bold text-ink">ASME B16.47</h2>
+      <p className="text-lg text-gray-700 leading-relaxed">B16.47 covers large diameter pipe flanges from 26 inch through 60 inch nominal. The standard has two series. Series A (formerly MSS SP-44) is the heavier pattern with larger bolt circle and bolt count, designed for cyclic and severe service. Series B (formerly API 605) is the lighter pattern, dimensionally compatible with API 605 legacy installations. Series A and Series B are not interchangeable. The project spec calls one or the other.</p>
+      <p className="text-lg text-gray-700 leading-relaxed">B16.47 pressure classes are 75, 150, 300, 400, 600, and 900, with Series B not generally available above Class 600. Material grades, facings, and P-T tables match B16.5 where applicable.</p>
+      <h2 className="font-display text-3xl font-bold text-ink">Common Materials</h2>
+      <p className="text-lg text-gray-700 leading-relaxed">A105 forged carbon is the default for room-temperature pressure service. A350 LF2 carries impact testing for low-temperature service down to minus 50 degrees F. A694 high-yield grades (F42 through F70) mate to API 5L X-grade pipe on pipeline lines. F304L and F316L stainless cover corrosion service. F11, F22, F91, and F92 chrome-moly cover elevated temperature service from 800 degrees F up.</p>
+    </div></section>
+    <section className="bg-[#DC2626] py-16 px-4 text-white text-center"><div className="max-w-3xl mx-auto"><h2 className="font-display text-4xl mb-6">ASME Spec on Your Line?</h2><Link href="/contact" className="inline-block bg-white text-[#DC2626] px-8 py-4 rounded font-semibold hover:bg-[#F8F6F0] transition">Request Quote</Link></div></section>
+  </>);
+}
