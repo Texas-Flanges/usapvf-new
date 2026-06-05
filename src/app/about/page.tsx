@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About USA PVF",
-  description: "USA PVF supplies American-made pipe, valves, and flanges with BAA, BABA, and AIS compliance documentation. Domestic melt traced through final fabrication for federally funded and federally procured projects."
+  description: "USA PVF supplies American-sourced pipe, valves, and flanges with BAA, BABA, and AIS compliance documentation. Domestic melt traced through final production for federally funded and federally procured projects. Supplying domestic-content PVF since 1986."
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
           <p className="uppercase tracking-wider text-[#DC2626] text-sm mb-3">About USA PVF</p>
           <h1 className="text-5xl font-display font-bold mb-6 text-white">American PVF With the Paperwork to Prove It</h1>
           <p className="text-xl text-gray-300 leading-relaxed">
-            USA PVF is the domestic compliance arm of a Houston-area pipe, valve, and flange supply operation. We exist for the line items on federal infrastructure projects where the part number and the pressure class are not enough on their own. The order needs documentation. Mill test reports, manufacturer certifications, project-specific compliance letters. The work is just as much about the paperwork as it is about the steel.
+            USA PVF supplies domestic-content pipe, valves, and flanges to federal infrastructure projects, and has done so since 1986. We exist for the line items where the part number and the pressure class are not enough on their own. The order needs documentation. Mill test reports, manufacturer certifications, project-specific compliance letters. The work is just as much about the paperwork as it is about the steel.
           </p>
         </div>
       </section>
@@ -22,10 +22,10 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto prose-content">
           <h2 className="text-3xl font-display font-bold mb-6 text-ink">Why We Exist</h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Federal infrastructure funding has expanded dramatically. The Infrastructure Investment and Jobs Act, the CHIPS and Science Act, and the Inflation Reduction Act are channeling federal money into American transportation, water, broadband, semiconductor manufacturing, and clean energy projects. Almost all of that spending carries domestic content rules. A flange or a valve or a fitting on those jobs is no longer just a piece of steel. It is a piece of steel with a paperwork chain.
+            Federal infrastructure funding has expanded dramatically. The Infrastructure Investment and Jobs Act, the CHIPS and Science Act, and the Inflation Reduction Act are channeling federal money into American transportation, water, broadband, semiconductor production, and clean energy projects. Almost all of that spending carries domestic content rules. A flange or a valve or a fitting on those jobs is no longer just a piece of steel. It is a piece of steel with a paperwork chain.
           </p>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Most distributors are set up for the commodity side of the trade. They can quote a Class 150 A105 weld neck in 6 inch by the truckload. What they cannot do, or cannot do well, is hand the project office a mill test report tracing the heat back to a domestic mill, a manufacturer certification confirming that every step of fabrication occurred in the United States, and a project-specific letter referencing the applicable federal standard. That is what USA PVF is built for.
+            Most distributors are set up for the commodity side of the trade. They can quote a Class 150 A105 weld neck in 6 inch by the truckload. What they cannot do, or cannot do well, is hand the project office a mill test report tracing the heat back to a domestic mill, a manufacturer certification confirming that every step of production occurred in the United States, and a project-specific letter referencing the applicable federal standard. That is what USA PVF is built for.
           </p>
 
           <h2 className="text-3xl font-display font-bold mb-6 mt-12 text-ink">What We Cover</h2>
@@ -51,7 +51,7 @@ export default function AboutPage() {
             Send the spec, the quantity, the project, and the applicable domestic content standard. We confirm inventory against current domestic-melt heat lots, draft the documentation scope, and quote the order the same business day. Lead times track domestic mill production cycles rather than overseas shipping, which means the schedule is predictable and the project does not absorb customs or surge premium freight to recover slipped weeks.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            For technical questions, supply questions, or to walk through a project domestic content requirement, call <a href="tel:2814848325">(281) 484-8325</a> or email <a href="mailto:sales@texasflange.com">sales@texasflange.com</a>.
+            Supplying domestic-content PVF since 1986. For technical questions, supply questions, or to walk through a project domestic content requirement, call <a href="tel:2814848325">(281) 484-8325</a> or email <a href="mailto:sales@texasflange.com">sales@texasflange.com</a>.
           </p>
         </div>
       </section>

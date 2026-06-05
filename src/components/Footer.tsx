@@ -9,7 +9,7 @@ export default function Footer() {
             USA<span className="text-[#DC2626]">PVF</span>
           </p>
           <p className="text-gray-300 leading-relaxed max-w-md">
-            American-made pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final fabrication.
+            American-sourced pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final production. Supplying domestic-content PVF since 1986.
           </p>
           <p className="text-gray-400 text-xs mt-4">PO Box 2889, Pearland, TX 77588</p>
         </div>

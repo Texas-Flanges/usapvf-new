@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Steel Flanges | ASME, API, AWWA Domestic Supply",
-  description: "American-made steel pipe flanges. ASME B16.5 and B16.47, API 6A and 6BX pipeline service, AWWA C207 waterworks, DIN EN 1092-1 metric. BAA, BABA, and AIS compliant supply with full documentation."
+  description: "American-sourced steel pipe flanges. ASME B16.5 and B16.47, API 6A and 6BX pipeline service (PSL-3 and PSL-4 available), AWWA C207 waterworks (FF with rubber gasket), DIN EN 1092-1 metric. BAA, BABA, and AIS compliant supply with full documentation."
 };
 
 export default function FlangesPage() {
@@ -35,15 +35,15 @@ export default function FlangesPage() {
             </div>
             <div className="bg-white border-l-4 border-[#DC2626] p-6">
               <h3 className="font-display text-xl font-bold text-[#1B1F23] mb-2">ASME B16.47</h3>
-              <p className="text-gray-700 leading-relaxed">Large diameter flanges, 26 inch through 60 inch NPS. Series A (heavy MSS pattern) and Series B (lighter API pattern). Class 75 through 900.</p>
+              <p className="text-gray-700 leading-relaxed">Large diameter flanges, 26 inch through 60 inch NPS. Series A (derived from MSS SP-44, heavier pattern, 150# and up) and Series B (derived from API 605, lighter pattern, 75# and up, not generally available above Class 600). Series A and B are not interchangeable.</p>
             </div>
             <div className="bg-white border-l-4 border-[#DC2626] p-6">
               <h3 className="font-display text-xl font-bold text-[#1B1F23] mb-2">API 6A / 6BX</h3>
-              <p className="text-gray-700 leading-relaxed">Wellhead and pressure control flanges. 2000, 3000, 5000, 10000, 15000, 20000, and 25000 PSI working pressure classes. Ring-type joint facings with matching ring gaskets.</p>
+              <p className="text-gray-700 leading-relaxed">Wellhead and pressure control flanges. 2000, 3000, 5000, 10000, 15000, 20000, and 25000 PSI working pressure classes. Ring-type joint facings with matching ring gaskets. PSL-3 and PSL-4 product specification levels available on procurement that demands the additional inspection and documentation those PSLs require.</p>
             </div>
             <div className="bg-white border-l-4 border-[#DC2626] p-6">
               <h3 className="font-display text-xl font-bold text-[#1B1F23] mb-2">AWWA C207</h3>
-              <p className="text-gray-700 leading-relaxed">Steel pipe flanges for waterworks service. Class B (86 psi), Class D (175 psi), Class E (275 psi), Class F (300 psi). 4 inch through 144 inch. Plate-cut construction from A36 or A516-70 with AIS-compliant domestic melt available.</p>
+              <p className="text-gray-700 leading-relaxed">Steel pipe flanges for waterworks service. Class B (86 psi), Class D (175 psi), Class E (275 psi), Class F (300 psi). 4 inch through 144 inch. C207 uses a flat-face (FF) facing mated to a full-face rubber gasket; it does <em>not</em> share the raised-face (RF) or ring-type-joint (RTJ) facings used on the ASME B16.5 line above, and C207 flanges are not directly interchangeable with raised-face hardware. Plate-cut construction from A36 or A516-70 with AIS-compliant domestic melt available.</p>
             </div>
             <div className="bg-white border-l-4 border-[#DC2626] p-6">
               <h3 className="font-display text-xl font-bold text-[#1B1F23] mb-2">DIN EN 1092-1</h3>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Pipe Fittings | Butt-Weld, Socket-Weld, Threaded",
-  description: "American-made pipe fittings. Butt-weld per ASME B16.9, socket-weld and threaded per ASME B16.11. Elbows, tees, reducers, caps, couplings. BAA, BABA, and AIS documentation."
+  description: "American-sourced pipe fittings. Butt-weld per ASME B16.9, socket-weld and threaded per ASME B16.11. Elbows, tees, reducers, caps, couplings. BAA, BABA, and AIS documentation."
 };
 
 export default function FittingsPage() {
@@ -13,7 +13,7 @@ export default function FittingsPage() {
           <Link href="/products" className="text-gray-400 hover:text-[#DC2626] text-sm mb-6 inline-block">&larr; Products</Link>
           <h1 className="font-display text-5xl font-bold mb-6 text-white">Pipe Fittings</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
-            Butt-weld, socket-weld, and threaded fittings to ASME dimensions. Domestic melt and domestic manufacture for projects with federal content requirements. Carbon, stainless, and alloy grades to mate any pipe in the line.
+            Butt-weld, socket-weld, and threaded fittings to ASME dimensions. Domestic-melt sourcing for projects with federal content requirements. Carbon, stainless, and alloy grades to mate any pipe in the line.
           </p>
         </div>
       </section>

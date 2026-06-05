@@ -5,20 +5,20 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "USA PVF | American-Made Flanges, Valves, and Fittings with Compliance Documentation",
+    default: "USA PVF | American-Sourced Flanges, Valves, and Fittings with Compliance Documentation",
     template: "%s | USA PVF"
   },
   description:
-    "American-made pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final fabrication. API 6A pipeline pressure ratings, ASME B16.5 dimensional reference, and the paperwork to prove every spec.",
+    "American-sourced pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final production. API 6A pipeline pressure ratings, ASME B16.5 dimensional reference, and the paperwork to prove every spec. Supplying domestic-content PVF since 1986.",
   keywords:
-    "USA PVF, American-made flanges, BAA compliant flanges, BABA flanges, AIS flanges, domestic melt, Buy American flanges, API 6A flanges, pipeline flanges, ASME B16.5, ASME B16.47, MTR documentation, IIJA flanges, federal infrastructure",
+    "USA PVF, American-sourced flanges, BAA compliant flanges, BABA flanges, AIS flanges, domestic melt, Buy American flanges, API 6A flanges, pipeline flanges, ASME B16.5, ASME B16.47, MTR documentation, IIJA flanges, federal infrastructure",
   metadataBase: new URL("https://usapvf-new.vercel.app"),
   openGraph: {
     type: "website",
     siteName: "USA PVF",
-    title: "USA PVF | American-Made PVF with Compliance Documentation",
+    title: "USA PVF | American-Sourced PVF with Compliance Documentation",
     description:
-      "Domestically manufactured pipe, valves, and flanges. BAA, BABA, AIS documented from melt through fabrication.",
+      "Domestically sourced pipe, valves, and flanges. BAA, BABA, AIS documented from melt through final production.",
     url: "https://usapvf-new.vercel.app"
   },
   robots: { index: true, follow: true }
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               url: "https://usapvf-new.vercel.app",
               logo: "https://usapvf-new.vercel.app/logo.png",
               description:
-                "American-made pipe, valves, and flanges with BAA, BABA, and AIS compliance documentation. Domestic melt and domestic fabrication for federally funded and federally procured projects.",
+                "American-sourced pipe, valves, and flanges with BAA, BABA, and AIS compliance documentation. Domestic melt and domestic production for federally funded and federally procured projects. Supplying domestic-content PVF since 1986.",
               telephone: "+1-281-484-8325",
               email: "sales@texasflange.com",
               address: {

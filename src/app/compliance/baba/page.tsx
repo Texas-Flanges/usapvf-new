@@ -36,6 +36,9 @@ export default function BabaPage() {
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
             The traceability requirement runs back to the mill. The mill test report must show that the heat from which the product was made was melted at a domestic mill. We confirm that traceability before the heat lot ships and we document it in the certification package that accompanies the order.
           </p>
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            For "manufactured products" under BABA (a separate category from iron-and-steel products), the 2024 OMB Build America Buy America update sets the domestic-content cost-share threshold at 55 percent, scheduled to increase in later years. Iron and steel products themselves do not use this percentage test; they must meet the 100 percent domestic manufacturing-including-melt standard. The 55 percent threshold applies to manufactured products where iron and steel is not the predominant content.
+          </p>
 
           <h2 className="font-display text-3xl font-bold text-ink mb-4 mt-12">Documentation We Provide</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6 text-lg leading-relaxed">

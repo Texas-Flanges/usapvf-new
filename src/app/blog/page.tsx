@@ -33,7 +33,7 @@ export default function BlogIndexPage() {
           ))}
         </div>
       </div></section>
-      <section className="bg-[#DC2626] py-16 px-4"><div className="max-w-4xl mx-auto text-center text-white"><h2 className="font-display text-4xl font-bold mb-4">Have a compliance project?</h2><p className="text-xl mb-8">We supply American-made flanges, valves, and fittings with BAA, BABA, and AIS documentation. Send the spec and we will quote.</p><div className="flex flex-wrap justify-center gap-4"><a href="tel:+12814848325" className="inline-block bg-white text-[#DC2626] px-8 py-4 rounded font-semibold hover:bg-[#F8F6F0] transition-colors">(281) 484-8325</a><a href="mailto:sales@texasflange.com" className="inline-block border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#DC2626] transition-colors">sales@texasflange.com</a></div></div></section>
+      <section className="bg-[#DC2626] py-16 px-4"><div className="max-w-4xl mx-auto text-center text-white"><h2 className="font-display text-4xl font-bold mb-4">Have a compliance project?</h2><p className="text-xl mb-8">We supply American-sourced flanges, valves, and fittings with BAA, BABA, and AIS documentation. Send the spec and we will quote.</p><div className="flex flex-wrap justify-center gap-4"><a href="tel:+12814848325" className="inline-block bg-white text-[#DC2626] px-8 py-4 rounded font-semibold hover:bg-[#F8F6F0] transition-colors">(281) 484-8325</a><a href="mailto:sales@texasflange.com" className="inline-block border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#DC2626] transition-colors">sales@texasflange.com</a></div></div></section>
     </main>
   );
 }

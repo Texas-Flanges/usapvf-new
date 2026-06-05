@@ -1,5 +1,5 @@
 import Link from "next/link";
-export const metadata = { title: "Industries We Supply | Oil and Gas, Water, Power, Chemical", description: "USA PVF supplies American-made flanges, valves, and fittings across twelve industries from oil and gas pipeline service to municipal waterworks under EPA SRF funding." };
+export const metadata = { title: "Industries We Supply | Oil and Gas, Water, Power, Chemical", description: "USA PVF supplies American-sourced flanges, valves, and fittings across twelve industries from oil and gas pipeline service to municipal waterworks under EPA SRF funding." };
 const industries = [
   { slug: "oil-gas", name: "Oil & Gas", line: "API 6A wellhead, MSS SP-44 pipeline, ASME process. NACE sour service." },
   { slug: "petrochemical", name: "Petrochemical", line: "ASME B16.5 and B16.47 process flanges. Chrome-moly F22 and F91. NACE." },

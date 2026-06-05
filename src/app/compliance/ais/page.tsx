@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "American Iron and Steel (AIS) Compliance for Flanges and Fittings",
-  description: "AIS compliance for pipe, valves, and flanges on EPA State Revolving Fund and USDA Rural Development water projects. Domestic melt-to-final-fabrication. Project-specific compliance letters."
+  description: "AIS compliance for pipe, valves, and flanges on EPA State Revolving Fund and USDA Rural Development water projects. Domestic melt-to-final-production. Project-specific compliance letters."
 };
 
 export default function AisPage() {

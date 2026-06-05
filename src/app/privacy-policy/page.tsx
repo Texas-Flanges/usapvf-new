@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
         <h1 className="font-display text-5xl font-bold text-ink mb-4">Privacy Policy</h1>
         <p className="text-sm text-gray-500 mb-10">Last updated: 2026</p>
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p>USA PVF is an informational and commercial resource for American-made pipe, valves, and flanges with federal domestic content compliance documentation. This page explains what information we collect through this site and how it is used.</p>
+          <p>USA PVF is an informational and commercial resource for American-sourced pipe, valves, and flanges with federal domestic content compliance documentation. This page explains what information we collect through this site and how it is used.</p>
 
           <h2 className="font-display text-2xl font-bold text-ink mt-8">Information We Collect</h2>
           <p>The site collects standard server logs including IP address, browser type, pages viewed, and timestamps for security and traffic analysis. When you submit a contact form or send an email, we receive the contact information and project details you choose to share.</p>

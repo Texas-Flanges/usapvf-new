@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Industrial Valves | API 6D Pipeline, ASME B16.34 Process",
-  description: "American-made gate, globe, check, ball, and butterfly valves. API 6D pipeline ratings, ASME B16.34 process ratings, AWWA waterworks. BAA, BABA, and AIS documented supply for federal projects."
+  description: "American-sourced gate, globe, check, ball, and butterfly valves. API 6D pipeline ratings, ASME B16.34 process ratings, AWWA waterworks. BAA, BABA, and AIS documented supply for federal projects."
 };
 
 export default function ValvesPage() {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact USA PVF",
-  description: "Contact USA PVF for American-made flanges, valves, and fittings with BAA, BABA, and AIS compliance documentation. (281) 484-8325 / sales@texasflange.com / PO Box 2889, Pearland, TX 77588."
+  description: "Contact USA PVF for American-sourced flanges, valves, and fittings with BAA, BABA, and AIS compliance documentation. (281) 484-8325 / sales@texasflange.com / PO Box 2889, Pearland, TX 77588. Supplying domestic-content PVF since 1986."
 };
 
 export default function ContactPage() {

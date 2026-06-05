@@ -2,27 +2,27 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "USA PVF | American-Made Flanges, Valves, and Fittings with Compliance Documentation",
+  title: "USA PVF | American-Sourced Flanges, Valves, and Fittings with Compliance Documentation",
   description:
-    "Domestically manufactured pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final fabrication. API 6A pipeline pressure ratings, ASME B16.5 reference, and the paperwork federal projects require."
+    "Domestically sourced pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final production. API 6A pipeline pressure ratings, ASME B16.5 reference, and the paperwork federal projects require. Supplying domestic-content PVF since 1986."
 };
 
 const faqs = [
   {
     q: "What does BAA compliance actually require for flanges?",
-    a: "The Buy American Act applies to direct federal procurement. For iron and steel products like flanges, the material must be manufactured in the United States. Compliance typically requires a manufacturer certification confirming domestic production. BAA is the most common federal domestic content requirement and the documentation is straightforward when the supply chain is built for it."
+    a: "The Buy American Act applies to direct federal procurement. For iron and steel products like flanges, the material must be manufactured in the United States. Compliance typically requires a manufacturer certification confirming domestic production. Under the 2024 FAR final rule, the Buy America Act domestic-content cost-share threshold is 55 percent for manufactured products, scheduled to step up further in subsequent years. BAA is the most common federal domestic content requirement and the documentation is straightforward when the supply chain is built for it."
   },
   {
     q: "What is the difference between BAA and BABA?",
-    a: "BAA (Buy American Act) is triggered by direct federal procurement. BABA (Build America Buy America) is triggered by federal infrastructure funding regardless of who purchases the equipment. BABA is stricter on iron and steel because it requires all manufacturing processes, including the initial melt, to occur in the United States. A flange forged domestically from foreign-melted steel meets BAA but not BABA."
+    a: "BAA (Buy American Act) is triggered by direct federal procurement. BABA (Build America Buy America) is triggered by federal infrastructure funding regardless of who purchases the equipment. BABA is stricter on iron and steel because it requires all manufacturing processes, including the initial melt, to occur in the United States. For manufactured products under BABA, the 2024 update sets a 55 percent domestic content threshold. A flange forged domestically from foreign-melted steel meets BAA but not BABA."
   },
   {
     q: "What does AIS compliance require?",
-    a: "American Iron and Steel applies to EPA State Revolving Fund water and wastewater projects and certain USDA Rural Development water projects. Every manufacturing step from melting through final fabrication must occur in the United States. For practical purposes the AIS standard is identical to BABA for iron and steel products. The documentation package and the supply chain requirements are the same."
+    a: "American Iron and Steel applies to EPA State Revolving Fund water and wastewater projects and certain USDA Rural Development water projects. Every manufacturing step from melting through final production must occur in the United States. For practical purposes the AIS standard is identical to BABA for iron and steel products. The documentation package and the supply chain requirements are the same."
   },
   {
     q: "Do you supply API 6A flanges for pipeline service?",
-    a: "Yes. Our API 6A inventory and supply chain covers 2000 pound, 3000 pound, and 5000 pound class flanges for production and wellhead service, with 6BX availability in 10000, 15000, and 20000 pound class for high pressure applications. Ring type joint facings with the correct ring gaskets ship together. Call (281) 484-8325 with the wellhead spec and we will confirm grade and rating."
+    a: "Yes. Our API 6A supply chain covers 2000 pound, 3000 pound, and 5000 pound class flanges for production and wellhead service, with 6BX availability in 10000, 15000, and 20000 pound class for high pressure applications. For strict API procurement we can source PSL-3 and PSL-4 product specification levels with the additional documentation and inspection coverage those PSLs require. Ring type joint facings with the correct ring gaskets ship together. Call (281) 484-8325 with the wellhead spec and we will confirm grade and rating."
   },
   {
     q: "Can a domestic flange be made from imported steel under BABA?",
@@ -30,11 +30,11 @@ const faqs = [
   },
   {
     q: "What is your typical lead time for compliant orders?",
-    a: "We pride ourselves on industry-leading turnaround. Standard stock flanges with BAA documentation often ship same day. BABA and AIS orders may take additional time to confirm domestic melt heat lots. Call (281) 484-8325 with the project domestic content requirement and we will quote turnaround against current inventory."
+    a: "We pride ourselves on industry-leading turnaround. Standard stock flanges with BAA documentation move with industry-leading turnaround. BABA and AIS orders may take additional time to confirm domestic melt heat lots. Call (281) 484-8325 with the project domestic content requirement and we will quote turnaround against current inventory."
   },
   {
     q: "Why are domestic content requirements expanding?",
-    a: "The Infrastructure Investment and Jobs Act, the CHIPS and Science Act, and the Inflation Reduction Act are directing federal funding into American infrastructure, semiconductor manufacturing, and clean energy projects. Nearly all of that spending carries domestic sourcing mandates. The result is more flanges, valves, and fittings than ever need full BAA, BABA, or AIS documentation."
+    a: "The Infrastructure Investment and Jobs Act, the CHIPS and Science Act, and the Inflation Reduction Act are directing federal funding into American infrastructure, semiconductor production, and clean energy projects. Nearly all of that spending carries domestic sourcing mandates. The result is more flanges, valves, and fittings than ever need full BAA, BABA, or AIS documentation."
   }
 ];
 
@@ -44,13 +44,13 @@ export default function HomePage() {
       <section className="bg-[#1B1F23] text-white py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#DC2626] uppercase tracking-widest text-sm font-semibold mb-4">
-            Domestic Melt. Domestic Manufacture. Documented.
+            Domestic Melt. Domestic Production. Documented.
           </p>
           <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
             American PVF With the Paperwork to Prove It
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl leading-relaxed mb-10">
-            Pipe, valves, and flanges manufactured in the United States with full BAA, BABA, and AIS compliance documentation. Mill test reports traceable to domestic melt heat numbers. Compliance letters drafted to your project standard. Same supply chain that handles ASME process service and API 6A pipeline pressure.
+            Pipe, valves, and flanges sourced from domestic mills with full BAA, BABA, and AIS compliance documentation. Mill test reports traceable to domestic melt heat numbers. Compliance letters drafted to your project standard. Same supply chain that handles ASME process service and API 6A pipeline pressure, including PSL-3 and PSL-4 procurement on strict API specs. Supplying domestic-content PVF since 1986.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/contact" className="bg-[#DC2626] text-white px-8 py-4 rounded font-semibold hover:bg-[#B91C1C] transition">
@@ -74,8 +74,8 @@ export default function HomePage() {
             <p className="text-sm uppercase tracking-wide mt-1">PSI API 6BX Class</p>
           </div>
           <div>
-            <p className="font-display text-4xl font-bold">100%</p>
-            <p className="text-sm uppercase tracking-wide mt-1">MTR Traceability</p>
+            <p className="font-display text-4xl font-bold">MTR</p>
+            <p className="text-sm uppercase tracking-wide mt-1">On Every Order</p>
           </div>
           <div>
             <p className="font-display text-4xl font-bold">Same-Day</p>
@@ -93,28 +93,28 @@ export default function HomePage() {
             Federal Funding. Federal Rules. Real Documentation.
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-12">
-            The Infrastructure Investment and Jobs Act, the CHIPS and Science Act, and the Inflation Reduction Act are channeling federal money into American infrastructure, manufacturing, and energy projects. Nearly all of it carries domestic content mandates. A flange order on a federally funded project is no longer just a part number and a pressure class. It is also a paperwork package.
+            The Infrastructure Investment and Jobs Act, the CHIPS and Science Act, and the Inflation Reduction Act are channeling federal money into American infrastructure, production, and energy projects. Nearly all of it carries domestic content mandates. A flange order on a federally funded project is no longer just a part number and a pressure class. It is also a paperwork package.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <Link href="/compliance/baa" className="block bg-white border-l-4 border-[#DC2626] p-6 rounded hover:shadow-md transition">
               <p className="text-[#DC2626] font-display text-3xl font-bold mb-2">BAA</p>
               <h3 className="font-display text-xl font-bold text-[#1B1F23] mb-2">Buy American Act</h3>
               <p className="text-gray-700 leading-relaxed text-sm">
-                Direct federal procurement. Iron and steel products must be manufactured domestically. Manufacturer certification confirms compliance.
+                Direct federal procurement. Iron and steel products manufactured in the United States. Manufactured-products domestic-content threshold set at 55 percent under the 2024 FAR final rule.
               </p>
             </Link>
             <Link href="/compliance/baba" className="block bg-white border-l-4 border-[#DC2626] p-6 rounded hover:shadow-md transition">
               <p className="text-[#DC2626] font-display text-3xl font-bold mb-2">BABA</p>
               <h3 className="font-display text-xl font-bold text-[#1B1F23] mb-2">Build America Buy America</h3>
               <p className="text-gray-700 leading-relaxed text-sm">
-                Federal infrastructure funding. All manufacturing steps including the initial melt must occur in the United States. MTRs trace to domestic mill.
+                Federal infrastructure funding. All iron-and-steel manufacturing steps including the initial melt must occur in the United States. 55 percent domestic-content threshold for manufactured products per the 2024 update.
               </p>
             </Link>
             <Link href="/compliance/ais" className="block bg-white border-l-4 border-[#DC2626] p-6 rounded hover:shadow-md transition">
               <p className="text-[#DC2626] font-display text-3xl font-bold mb-2">AIS</p>
               <h3 className="font-display text-xl font-bold text-[#1B1F23] mb-2">American Iron and Steel</h3>
               <p className="text-gray-700 leading-relaxed text-sm">
-                EPA State Revolving Fund and USDA Rural Development water projects. Same melt-to-final-fab standard as BABA. Project-specific compliance letters.
+                EPA State Revolving Fund and USDA Rural Development water projects. Same melt-to-final-production standard as BABA for iron and steel. Project-specific compliance letters.
               </p>
             </Link>
           </div>
@@ -132,7 +132,7 @@ export default function HomePage() {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { href: "/products/flanges", title: "Flanges", body: "Weld neck, blind, slip-on, threaded, socket weld, lap joint, reducing, orifice. Carbon, stainless, alloy. 1/2 inch through 60 inch and custom over 60.", tags: ["ASME B16.5", "ASME B16.47", "API 6A", "AWWA C207"] },
+              { href: "/products/flanges", title: "Flanges", body: "Weld neck, blind, slip-on, threaded, socket weld, lap joint, reducing, orifice. Carbon, stainless, alloy. 1/2 inch through 60 inch and custom over 60. PSL-3 and PSL-4 available on API 6A procurement.", tags: ["ASME B16.5", "ASME B16.47", "API 6A PSL-3/4", "AWWA C207"] },
               { href: "/products/fittings", title: "Pipe Fittings", body: "Butt-weld, socket-weld, threaded. Elbows, tees, reducers, caps, couplings, unions, and specialty fittings for every service condition.", tags: ["ASME B16.9", "ASME B16.11", "SCH 10 to XXH"] },
               { href: "/products/valves", title: "Valves", body: "Gate, globe, check, ball, and butterfly valves for piping system service. API 6D pipeline ratings and ASME B16.34 process service.", tags: ["API 6D", "ASME B16.34", "NACE MR0175"] },
               { href: "/products/custom-machining", title: "Custom Machining", body: "Non-standard bores, overbore conditions, special facings, RTJ grooves, weld overlay, hard facing. If the catalog does not have it, we machine it.", tags: ["CNC turning", "RTJ grooves", "Weld overlay"] }
@@ -167,8 +167,8 @@ export default function HomePage() {
             {[
               { code: "ASME B16.5", sub: "Pipe Flanges 1/2 to 24 inch" },
               { code: "ASME B16.47", sub: "Large Diameter 26 to 60 inch" },
-              { code: "API 6A / 6BX", sub: "Pipeline 2000 to 20000 PSI" },
-              { code: "AWWA C207", sub: "Waterworks Class B/D/E/F" },
+              { code: "API 6A / 6BX", sub: "Pipeline 2000 to 20000 PSI, PSL-3/4" },
+              { code: "AWWA C207", sub: "Waterworks Class B/D/E/F, FF + Rubber" },
               { code: "ANSI B16.1", sub: "Cast Iron and Plate Retrofit" },
               { code: "DIN EN 1092-1", sub: "Metric PN 6 to PN 400" },
               { code: "NACE MR0175", sub: "Sour Service Hardness" },
@@ -193,8 +193,8 @@ export default function HomePage() {
             {[
               { title: "Domestic Melt Traceability", body: "Mill test reports trace the heat number back to a domestic mill on every BABA and AIS order. Foreign-melted steel does not enter the compliance lot." },
               { title: "Project-Specific Letters", body: "Compliance letters tailored to your project standard, whether BAA direct procurement, BABA infrastructure funding, or AIS water program funding." },
-              { title: "API 6A Pipeline Inventory", body: "Wellhead, BOP, and Christmas tree service flanges in API 6A 2000# through 6BX 20000# class with the right ring gaskets shipped together." },
-              { title: "ASME Process Coverage", body: "Full ASME B16.5 and B16.47 inventory for refinery, petrochemical, and power generation process piping with carbon, stainless, and chrome-moly grades." },
+              { title: "API 6A Pipeline Inventory", body: "Wellhead, BOP, and Christmas tree service flanges in API 6A 2000# through 6BX 20000# class with the right ring gaskets shipped together. PSL-3 and PSL-4 sourcing available for strict-spec API procurement." },
+              { title: "ASME Process Coverage", body: "Full ASME B16.5 and B16.47 supply for refinery, petrochemical, and power generation process piping with carbon, stainless, and chrome-moly grades." },
               { title: "Dimensional Verification", body: "Bolt holes, raised faces, bore tolerances measured and documented before shipment. QC catches the dimensional issue at the dock, not at the field." },
               { title: "Same-Day Quote Turnaround", body: "Tell us the spec, the quantity, the project domestic content standard, and the delivery target. The quote with lead time and compliance scope comes back the same business day." }
             ].map((c) => (
@@ -245,7 +245,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { href: "/resources/flange-dimensions", title: "Flange Dimension Reference", body: "ASME B16.5 and B16.47 dimensional tables. OD, bolt circle, bolt count, thickness by class and size." },
-              { href: "/standards/api-flanges", title: "API 6A / 6BX Guide", body: "Pipeline and wellhead pressure classes. 2000 pound through 20000 pound. Ring gasket matching and RTJ groove geometry." },
+              { href: "/standards/api-flanges", title: "API 6A / 6BX Guide", body: "Pipeline and wellhead pressure classes. 2000 pound through 20000 pound. Ring gasket matching, RTJ groove geometry, PSL-3 and PSL-4 procurement notes." },
               { href: "/tools/bolt-torque-calculator", title: "Bolt Torque Calculator", body: "B7, B7M, B8, and B8M stud torque values by flange size, gasket type, and lubrication condition." },
               { href: "/resources/mtr-documentation", title: "MTR & Compliance Letters", body: "What goes on a mill test report. How domestic melt is documented. How BABA and AIS compliance letters are drafted." },
               { href: "/compliance/baba", title: "BABA Compliance Explained", body: "What Build America Buy America actually requires for iron and steel products. How the heat lot traceability works." },
@@ -293,7 +293,7 @@ export default function HomePage() {
               Request a Quote
             </Link>
           </div>
-          <p className="text-white/80 text-sm mt-8">PO Box 2889, Pearland, TX 77588</p>
+          <p className="text-white/80 text-sm mt-8">PO Box 2889, Pearland, TX 77588 | Supplying domestic-content PVF since 1986</p>
         </div>
       </section>
     </>

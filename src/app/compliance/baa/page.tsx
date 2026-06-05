@@ -31,10 +31,15 @@ export default function BaaPage() {
 
           <h2 className="font-display text-3xl font-bold text-ink mb-4 mt-12">What BAA Requires for Iron and Steel</h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            For iron and steel products including flanges, fittings, and valves, BAA requires that the product be manufactured in the United States. The standard is interpreted as the final manufacturing step occurring on US soil. For a forged steel flange, that means the forging and machining must occur domestically. The melt origin (where the steel was poured) is not always required by BAA itself, although project-specific overlays may add that requirement.
+            For iron and steel products including flanges, fittings, and valves, BAA requires that the product be manufactured in the United States. The standard is interpreted as the final manufacturing step occurring on US soil. For a forged steel flange, that means the forging and machining must occur domestically. BAA focuses on US manufacture of the end product; melt traceability is generally a BABA or AIS overlay rather than a base BAA requirement, though project-specific terms may add it.
           </p>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            The cost share component of BAA evaluates the domestic content threshold. Recent amendments increased the domestic content threshold percentage for iron and steel products. The trend is upward and project specifications should be read for the threshold applicable to the contract year.
+            For iron and steel end products, BAA applies the "predominantly iron or steel" test: the product is treated as an iron or steel end product when iron and steel content exceeds 50 percent of total component cost, and all iron and steel manufacturing processes must occur domestically with no cost-share calculation. This is distinct from the manufactured-products domestic-content cost-share test, which under the 2024 FAR final rule is 55 percent (set to step up further in subsequent years). Project specifications should be read for both the iron-and-steel determination and any cost-share threshold applicable to the contract year.
+          </p>
+
+          <h2 className="font-display text-3xl font-bold text-ink mb-4 mt-12">DFARS Specialty Metals (DoD Procurement Overlay)</h2>
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            On Department of Defense procurement, DFARS 252.225-7008 and 252.225-7009 add a specialty-metals restriction on top of BAA. The clauses cover specific high-performance alloys (titanium, certain corrosion-resistant steels, certain nickel and cobalt alloys, and others listed in the regulation). DFARS does not require domestic melt only. Specialty metals must be melted in qualifying countries (the United States or a DFARS-designated Qualifying Country such as the United Kingdom, Canada, Australia, and other allies listed in DFARS 225.872-1), with melt and pour locations documented on the mill certificate.
           </p>
 
           <h2 className="font-display text-3xl font-bold text-ink mb-4 mt-12">Documentation We Provide</h2>

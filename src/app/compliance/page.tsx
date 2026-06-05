@@ -23,12 +23,12 @@ export default function ComplianceHub() {
           <Link href="/compliance/baa" className="block bg-white border-l-4 border-[#DC2626] p-8 rounded hover:shadow-lg transition">
             <p className="text-[#DC2626] font-display text-4xl font-bold mb-2">BAA</p>
             <h2 className="font-display text-2xl font-bold text-[#1B1F23] mb-3">Buy American Act</h2>
-            <p className="text-gray-700 leading-relaxed text-sm">Direct federal procurement. Iron and steel manufactured in the United States. Manufacturer certification.</p>
+            <p className="text-gray-700 leading-relaxed text-sm">Direct federal procurement. Iron and steel manufactured in the United States. 55 percent manufactured-products threshold per the 2024 FAR final rule. DFARS specialty-metals overlay on DoD orders.</p>
           </Link>
           <Link href="/compliance/baba" className="block bg-white border-l-4 border-[#DC2626] p-8 rounded hover:shadow-lg transition">
             <p className="text-[#DC2626] font-display text-4xl font-bold mb-2">BABA</p>
             <h2 className="font-display text-2xl font-bold text-[#1B1F23] mb-3">Build America Buy America</h2>
-            <p className="text-gray-700 leading-relaxed text-sm">Federal infrastructure funding. Melt-to-final-fab all in the United States. MTR traces heat to domestic mill.</p>
+            <p className="text-gray-700 leading-relaxed text-sm">Federal infrastructure funding. Iron and steel: melt-to-final-production all in the United States. 55 percent threshold for manufactured products per the 2024 update. MTR traces heat to domestic mill.</p>
           </Link>
           <Link href="/compliance/ais" className="block bg-white border-l-4 border-[#DC2626] p-8 rounded hover:shadow-lg transition">
             <p className="text-[#DC2626] font-display text-4xl font-bold mb-2">AIS</p>
