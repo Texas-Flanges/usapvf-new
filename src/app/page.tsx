@@ -203,7 +203,7 @@ export default function Home() {
             Email: <a href="mailto:sales@texasflange.com" style={{ color: "#8B9FD4", textDecoration: "none" }}>sales@texasflange.com</a>
           </p>
           <p style={{ marginBottom: "8px" }}>
-            <a href="https://texasflange.com/?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
+            <a href="https://texasflange.com/domestic-vs-import/?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
             <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
           </p>
           <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2026 USA PVF. All rights reserved.</p>
