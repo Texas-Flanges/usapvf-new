@@ -1,187 +1,49 @@
-import type { Metadata } from "next";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Our Work - USA PVF Products | USA PVF",
-  description: "Flanges crafted with precision and care. Supplying durable flanges to USA's oil and gas industries. See our projects and customer stories.",
-  keywords: ["USA PVF products", "industrial flanges", "oil and gas flanges", "custom flanges USA", "flange testimonials"],
-  openGraph: {
-    title: "Our Work - USA PVF Products",
-    description: "Flanges crafted with precision and care for USA industries.",
-    url: "https://usapvf.com/products",
-    siteName: "USA PVF",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://usapvf.com/products",
-  },
+export const metadata = {
+  title: "Products | Flanges, Fittings, Valves, Custom Machining",
+  description: "USA PVF supplies flanges, pipe fittings, valves, and custom machining with full BAA, BABA, and AIS compliance documentation. ASME, API, AWWA, DIN standards. Carbon, stainless, alloy, exotic materials."
 };
 
-export default function ProductsPage() {
+export default function ProductsHub() {
+  const products = [
+    { href: "/products/flanges", title: "Flanges", body: "Weld neck, blind, slip-on, threaded, socket weld, lap joint, reducing, orifice, spectacle blind, long weld neck, plate. ASME B16.5, B16.47 Series A and B, API 6A, AWWA C207, DIN EN 1092-1, MSS SP-44.", chips: ["Class 150 to 2500", "API 2000 to 20000 PSI", "1/2 in to 60 in", "Custom over 60 in"] },
+    { href: "/products/fittings", title: "Pipe Fittings", body: "Butt-weld, socket-weld, and threaded fittings. Elbows (45 and 90), tees, reducers (concentric and eccentric), caps, couplings, unions, swages. ASME B16.9 and B16.11 dimensions.", chips: ["SCH 10 to XXH", "Seamless or welded", "1/8 in to 48 in", "Long-radius bends"] },
+    { href: "/products/valves", title: "Valves", body: "Gate, globe, check, ball, and butterfly valves for piping system service. API 6D pipeline ratings, ASME B16.34 process ratings. NACE MR0175 sour service availability.", chips: ["API 6D pipeline", "ASME B16.34", "Bolted and welded", "Class 150 to 1500"] },
+    { href: "/products/custom-machining", title: "Custom Machining", body: "Non-standard bores, overbore conditions, special facings, RTJ grooves, weld overlay, hard facing, hubbed plate flanges. When the catalog dimension does not fit the job.", chips: ["CNC turn and mill", "Bore mods", "RTJ retrofit", "Weld overlay"] }
+  ];
   return (
     <>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            body > header.border-gray-200 { display: none !important; }
-            .rv { opacity: 1; transform: none; }
-            * { box-sizing: border-box; }
-            html { scroll-behavior: smooth; }
-          `,
-        }}
-      />
-
-      {/* Navigation */}
-      <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 40px", backgroundColor: "#fff", borderBottom: "1px solid #e5e7eb", position: "sticky", top: 0, zIndex: 50 }}>
-        <a href="/" style={{ fontSize: "22px", fontWeight: 700, color: "#1a1a2e", textDecoration: "none" }}>USA PVF</a>
-        <div style={{ display: "flex", gap: "28px", alignItems: "center" }}>
-          <a href="/" style={{ color: "#555", textDecoration: "none" }}>Home</a>
-          <a href="/products" style={{ color: "#1a1a2e", textDecoration: "none", fontWeight: 500 }}>Products</a>
-          <a href="/about" style={{ color: "#555", textDecoration: "none" }}>About</a>
-          <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "10px 24px", borderRadius: "6px", textDecoration: "none", fontWeight: 500 }}>Get Quote</a>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section
-        className="rv"
-        style={{
-          backgroundImage: "linear-gradient(rgba(45,43,127,0.75), rgba(45,43,127,0.75)), url(/hero-flange.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          padding: "100px 40px",
-          textAlign: "center",
-          color: "#fff",
-          minHeight: "450px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 700, marginBottom: "20px", lineHeight: 1.1 }}>
-          Our Work
-        </h1>
-        <p style={{ fontSize: "clamp(16px, 2vw, 20px)", maxWidth: "600px", opacity: 0.9 }}>
-          Flanges crafted with precision and care.
-        </p>
-      </section>
-
-      {/* Louisiana Projects Section */}
-      <section className="rv" style={{ padding: "80px 40px", backgroundColor: "#fff" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
-          <div style={{ flex: "1 1 400px" }}>
-            <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "20px" }}>USA Projects</h2>
-            <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#444", marginBottom: "30px" }}>
-              Supplying durable flanges to USA's oil and gas industries, supporting regional excellence with pride.
-            </p>
-            <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ backgroundColor: "#2D2B7F", color: "#fff", padding: "12px 32px", borderRadius: "6px", textDecoration: "none", fontWeight: 500, display: "inline-block" }}>Get Quote</a>
-          </div>
-          <div style={{ flex: "1 1 300px" }}>
-            <img src="/hero-flange.jpg" alt="Industrial flange for USA oil and gas projects" style={{ width: "100%", borderRadius: "12px", objectFit: "cover", maxHeight: "400px" }} />
-          </div>
-        </div>
-      </section>
-
-      {/* Customer Stories Section */}
-      <section className="rv" style={{ padding: "80px 40px", backgroundColor: "#f8f9fa" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "12px" }}>Customer Stories</h2>
-          <p style={{ fontSize: "17px", color: "#666", marginBottom: "50px" }}>
-            Local businesses across USA rely on our flanges for quality and timely delivery every season.
+      <section className="bg-[#1B1F23] text-white py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="uppercase tracking-widest text-[#DC2626] text-sm mb-3">Product Lines</p>
+          <h1 className="font-display text-5xl font-bold mb-6 text-white">What We Supply</h1>
+          <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
+            Four product categories. Every piece traceable to a mill heat. Every order documented to the federal domestic content standard the project requires.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px", textAlign: "left" }}>
-            <div style={{ backgroundColor: "#fff", padding: "40px 30px", borderRadius: "12px", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
-              <p style={{ fontSize: "17px", color: "#444", lineHeight: 1.7, fontStyle: "italic", marginBottom: "20px" }}>
-                &ldquo;We got the flange delivered and it was exactly what we needed -- strong, reliable, and on time every time.&rdquo;
-              </p>
-              <p style={{ fontWeight: 600, color: "#1a1a2e" }}>Mark T.</p>
-            </div>
-            <div style={{ backgroundColor: "#fff", padding: "40px 30px", borderRadius: "12px", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
-              <p style={{ fontSize: "17px", color: "#444", lineHeight: 1.7, fontStyle: "italic", marginBottom: "20px" }}>
-                &ldquo;Their flanges held up perfectly through our toughest projects across demanding conditions.&rdquo;
-              </p>
-              <p style={{ fontWeight: 600, color: "#1a1a2e" }}>Jill R.</p>
-            </div>
-          </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="rv" style={{ padding: "80px 40px", backgroundColor: "#2D2B7F", textAlign: "center", color: "#fff" }}>
-        <h2 style={{ fontSize: "36px", fontWeight: 700, marginBottom: "16px" }}>Get Connected</h2>
-        <p style={{ fontSize: "18px", marginBottom: "30px", opacity: 0.9 }}>Get quotes or questions answered</p>
-        <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ backgroundColor: "#fff", color: "#2D2B7F", padding: "14px 40px", borderRadius: "30px", textDecoration: "none", fontWeight: 600, fontSize: "16px", display: "inline-block" }}>Contact Us</a>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="rv" style={{ padding: "80px 40px", backgroundColor: "#f8f9fa" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: 700, color: "#1a1a2e", marginBottom: "40px", textAlign: "center" }}>Frequently Asked Questions</h2>
-          {[
-            { q: "What flanges do you offer?", a: "We supply weld neck, slip-on, blind, lap joint, socket weld, threaded, and many other industrial flanges and flange types." },
-            { q: "Do you serve USA only?", a: "No, but we proudly supply flanges throughout USA." },
-            { q: "Can you customize flange sizes?", a: "Absolutely, we tailor flange dimensions to meet your exact project specifications." },
-            { q: "How do you ensure quality?", a: "We maintain strict quality standards and love serving our customers nationwide." },
-            { q: "What materials are used?", a: "Our flanges are made from premium carbon and stainless steel." },
-          ].map((item, i) => (
-            <div key={i} style={{ backgroundColor: "#fff", padding: "24px 30px", borderRadius: "8px", marginBottom: "12px", boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}>
-              <h3 style={{ fontSize: "17px", fontWeight: 600, color: "#1a1a2e", marginBottom: "8px" }}>{item.q}</h3>
-              <p style={{ color: "#555", lineHeight: 1.6, margin: 0 }}>{item.a}</p>
-            </div>
+      <section className="bg-cream py-16 px-4">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+          {products.map((p) => (
+            <Link key={p.href} href={p.href} className="block bg-white border border-gray-200 p-8 rounded-lg hover:border-[#DC2626] hover:shadow-md transition">
+              <h2 className="font-display text-3xl font-bold text-[#1B1F23] mb-4">{p.title}</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">{p.body}</p>
+              <ul className="flex flex-wrap gap-2 mb-4">
+                {p.chips.map((c) => <li key={c} className="text-xs bg-[#F8F6F0] text-[#1B1F23] px-3 py-1 rounded-full font-semibold">{c}</li>)}
+              </ul>
+              <span className="text-[#DC2626] font-semibold">View Details &rarr;</span>
+            </Link>
           ))}
         </div>
       </section>
-
-      {/* Footer */}
-      <footer style={{ padding: "40px", backgroundColor: "#1a1a2e", color: "#ccc", textAlign: "center" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#fff", marginBottom: "16px" }}>USA PVF</h3>
-          <p style={{ marginBottom: "8px" }}>Serving USA with quality flanges</p>
-          <p style={{ marginBottom: "8px" }}>
-            Phone: <a href="tel:281-484-8325" style={{ color: "#8B9FD4", textDecoration: "none" }}>281-484-8325</a> | Fax: 281-484-8730
-          </p>
-          <p style={{ marginBottom: "16px" }}>
-            Email: <a href="mailto:sales@texasflange.com" style={{ color: "#8B9FD4", textDecoration: "none" }}>sales@texasflange.com</a>
-          </p>
-          <p style={{ marginBottom: "8px" }}>
-            <a href="https://texasflange.com/?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Texas Flange</a> {" | "}
-            <a href="https://texasflange.com/contact-us/?ref=usapvf" style={{ color: "#8B9FD4", textDecoration: "none" }}>Contact Us</a>
-          </p>
-          <p style={{ fontSize: "13px", color: "#888", marginTop: "20px" }}>&copy; 2025 USA PVF. All rights reserved.</p>
+      <section className="bg-[#DC2626] py-16 px-4 text-white text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-display text-4xl mb-4">Send a Spec, Not a Catalog Number</h2>
+          <p className="text-xl mb-8">We work from drawings, BOMs, or descriptions. The quote includes documentation scope for the applicable federal standard.</p>
+          <Link href="/contact" className="inline-block bg-white text-[#DC2626] px-8 py-4 rounded font-semibold hover:bg-[#F8F6F0] transition">Request Quote</Link>
         </div>
-      </footer>
-
-      {/* Structured Data - Breadcrumb */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://usapvf.com" },
-              { "@type": "ListItem", position: 2, name: "Products", item: "https://usapvf.com/products" },
-            ],
-          }),
-        }}
-      />
-      {/* Structured Data - FAQ */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              { "@type": "Question", name: "What flanges do you offer?", acceptedAnswer: { "@type": "Answer", text: "We supply weld neck, slip-on, blind, lap joint, socket weld, threaded, and many other industrial flanges and flange types." }},
-              { "@type": "Question", name: "Do you serve USA only?", acceptedAnswer: { "@type": "Answer", text: "No, but we proudly supply flanges throughout USA." }},
-              { "@type": "Question", name: "Can you customize flange sizes?", acceptedAnswer: { "@type": "Answer", text: "Absolutely, we tailor flange dimensions to meet your exact project specifications." }},
-              { "@type": "Question", name: "What materials are used?", acceptedAnswer: { "@type": "Answer", text: "Our flanges are made from premium carbon and stainless steel." }},
-            ],
-          }),
-        }}
-      />
+      </section>
     </>
   );
 }
-

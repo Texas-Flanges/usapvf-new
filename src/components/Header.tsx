@@ -1,35 +1,115 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
+import { useState } from "react";
 
-export function Header() {
+const industries = [
+  { slug: "oil-gas", name: "Oil & Gas" },
+  { slug: "petrochemical", name: "Petrochemical" },
+  { slug: "power-generation", name: "Power Generation" },
+  { slug: "waterworks", name: "Water & Wastewater" },
+  { slug: "chemical-processing", name: "Chemical Processing" },
+  { slug: "mining", name: "Mining & Minerals" },
+  { slug: "pulp-paper", name: "Pulp & Paper" },
+  { slug: "food-beverage", name: "Food & Beverage" },
+  { slug: "agriculture", name: "Agriculture" },
+  { slug: "hvac", name: "HVAC & Mechanical" },
+  { slug: "marine", name: "Marine & Shipbuilding" },
+  { slug: "data-centers", name: "Data Centers" }
+];
+
+export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="container-wide py-4 flex justify-between items-center">
-        <Link href="/" className="text-lg sm:text-2xl font-bold text-blue-600">
-          Texas Flanges
+    <header className="bg-[#1B1F23] text-white sticky top-0 z-50 border-b border-[#DC2626]/40">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <Link href="/" className="text-white font-display text-2xl tracking-wide">
+          USA<span className="text-[#DC2626]">PVF</span>
         </Link>
-        <nav className="hidden md:flex gap-8">
-          <Link href="/" className="text-gray-700 hover:text-blue-600 transition">
-            Home
-          </Link>
-          <Link href="/about" className="text-gray-700 hover:text-blue-600 transition">
-            About
-          </Link>
-          <Link href="/services" className="text-gray-700 hover:text-blue-600 transition">
-            Services
-          </Link>
-          <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition">
-            Blog
-          </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition">
-            Contact
-          </Link>
+
+        <nav className="hidden lg:flex items-center gap-1 text-sm">
+          <NavDropdown label="Products" items={[
+            { href: "/products/flanges", label: "Flanges" },
+            { href: "/products/fittings", label: "Pipe Fittings" },
+            { href: "/products/valves", label: "Valves" },
+            { href: "/products/custom-machining", label: "Custom Machining" }
+          ]} />
+          <NavDropdown label="Standards" items={[
+            { href: "/standards/asme-flanges", label: "ASME B16.5 / B16.47" },
+            { href: "/standards/api-flanges", label: "API 6A / 6BX" },
+            { href: "/standards/awwa-flanges", label: "AWWA C207" },
+            { href: "/standards/din-flanges", label: "DIN EN 1092-1" }
+          ]} />
+          <NavDropdown label="Compliance" items={[
+            { href: "/compliance/baa", label: "Buy American Act" },
+            { href: "/compliance/baba", label: "Build America Buy America" },
+            { href: "/compliance/ais", label: "American Iron & Steel" },
+            { href: "/compliance", label: "Overview" }
+          ]} />
+          <NavDropdown label="Materials" items={[
+            { href: "/materials/carbon-steel", label: "Carbon Steel" },
+            { href: "/materials/stainless-steel", label: "Stainless Steel" },
+            { href: "/materials/alloy-steel", label: "Alloy Steel" },
+            { href: "/materials/exotic-alloys", label: "Exotic Alloys" }
+          ]} />
+          <NavDropdown label="Industries" items={industries.map((i) => ({ href: `/industries/${i.slug}`, label: i.name }))} />
+          <NavDropdown label="Resources" items={[
+            { href: "/resources/flange-dimensions", label: "Flange Dimensions" },
+            { href: "/resources/mtr-documentation", label: "MTR Documentation" },
+            { href: "/resources/cad-drawings", label: "CAD Drawings" },
+            { href: "/resources/technical-specs", label: "Technical Specs" },
+            { href: "/tools", label: "Engineering Tools" }
+          ]} />
+          <Link href="/blog" className="px-3 py-2 hover:text-[#DC2626] transition">Blog</Link>
+          <Link href="/about" className="px-3 py-2 hover:text-[#DC2626] transition">About</Link>
+          <Link href="/contact" className="hidden lg:inline-block bg-[#DC2626] text-white px-4 py-2 rounded font-semibold text-sm hover:bg-[#B91C1C] transition ml-2">Request Quote</Link>
         </nav>
-        <Link href="https://texasflange.com/contact?ref=usapvf" target="_blank" rel="noopener noreferrer" className="btn-primary">
-          Get a Quote
-        </Link>
+
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="lg:hidden text-white p-2"
+          aria-label="Toggle menu"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+          </svg>
+        </button>
       </div>
+
+      {mobileOpen && (
+        <div className="lg:hidden bg-[#1B1F23] border-t border-[#DC2626]/30 px-4 py-4">
+          <div className="flex flex-col gap-1 text-sm">
+            <Link href="/products" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>Products</Link>
+            <Link href="/standards" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>Standards</Link>
+            <Link href="/compliance" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>Compliance</Link>
+            <Link href="/materials" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>Materials</Link>
+            <Link href="/industries" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>Industries</Link>
+            <Link href="/resources" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>Resources</Link>
+            <Link href="/blog" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>Blog</Link>
+            <Link href="/about" className="py-2 text-white hover:text-[#DC2626]" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link href="/contact" className="block py-2 bg-[#DC2626] text-white text-center rounded mt-2" onClick={() => setMobileOpen(false)}>Request Quote</Link>
+          </div>
+        </div>
+      )}
     </header>
+  );
+}
+
+function NavDropdown({ label, items }: { label: string; items: { href: string; label: string }[] }) {
+  return (
+    <div className="relative group">
+      <button className="px-3 py-2 hover:text-[#DC2626] transition flex items-center gap-1">
+        {label}
+        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M5.516 7.548L10 12.032l4.484-4.484 1.06 1.061L10 14.155 4.456 8.609z" /></svg>
+      </button>
+      <div className="absolute top-full left-0 hidden group-hover:block bg-white border border-gray-200 rounded shadow-lg min-w-[220px] py-2 z-50">
+        {items.map((item) => (
+          <Link key={item.href} href={item.href} className="block px-4 py-2 text-sm text-[#1B1F23] hover:bg-[#F8F6F0] hover:text-[#DC2626] transition">
+            {item.label}
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }

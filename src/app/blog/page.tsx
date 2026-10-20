@@ -1,98 +1,39 @@
+import Link from "next/link";
 import type { Metadata } from "next";
+import { posts } from "./posts";
 
 export const metadata: Metadata = {
-  title: "Blog | USA PVF",
-  description: "Expert insights on PVF industry trends, flange manufacturing, and industrial applications. Read our latest articles and technical guides.",
-  keywords: ["PVF blog", "flange industry", "industrial flanges", "manufacturing insights", "technical guides"],
-  openGraph: {
-    title: "Blog | USA PVF",
-    description: "Expert insights on PVF industry trends and flange manufacturing.",
-    url: "https://usapvf.com/blog",
-    siteName: "USA PVF",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://usapvf.com/blog",
-  },
+  title: "Blog | Domestic PVF Compliance and Engineering Reference",
+  description: "Technical articles on BAA, BABA, and AIS compliance for pipe valves and flanges. Domestic melt traceability, API 6A pipeline spec guidance, and federal funding documentation reference."
 };
 
-const posts = [
-  { title: "The Future of PVF Manufacturing", date: "March 18, 2026", excerpt: "Industry trends and innovations shaping the future of pressure vessel fabrication." },
-  { title: "Understanding Flange Standards and Compliance", date: "March 15, 2026", excerpt: "A comprehensive guide to ASME, ANSI, and other critical flange manufacturing standards." },
-  { title: "Quality Control in Flange Production", date: "March 10, 2026", excerpt: "Best practices for ensuring superior quality in every flange we manufacture." },
-];
+function formatDate(iso: string): string {
+  return new Date(iso + "T00:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+}
 
-export default function BlogPage() {
+export default function BlogIndexPage() {
+  const sorted = [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
   return (
-    <>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            body > header.border-gray-200 { display: none !important; }
-            * { box-sizing: border-box; }
-          `,
-        }}
-      />
-
-      {/* Navigation */}
-      <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 40px", backgroundColor: "#1a3a5c", color: "#fff", position: "sticky", top: 0, zIndex: 50 }}>
-        <a href="/" style={{ fontSize: "20px", fontWeight: 700, color: "#fff", textDecoration: "none" }}>USA PVF</a>
-        <div style={{ display: "flex", gap: "24px", alignItems: "center" }}>
-          <a href="/" style={{ color: "#fff", textDecoration: "none" }}>Home</a>
-          <a href="/blog" style={{ color: "#fff", textDecoration: "none", fontWeight: 600 }}>Blog</a>
-          <a href="https://texasflange.com/contact-us?ref=usapvf" style={{ backgroundColor: "#2563eb", color: "#fff", padding: "10px 24px", borderRadius: "6px", textDecoration: "none", fontWeight: 500 }}>Request a Quote</a>
-        </div>
-      </nav>
-
-      {/* Header */}
-      <section style={{ background: "linear-gradient(135deg, #1a3a5c 0%, #2563eb 100%)", padding: "60px 40px", color: "#fff" }}>
-        <div style={{ maxWidth: "800px" }}>
-          <h1 style={{ fontSize: "42px", fontWeight: 700, marginBottom: "12px" }}>Blog</h1>
-          <p style={{ fontSize: "18px", opacity: 0.9 }}>Technical articles and industry insights about flanges and PVF</p>
-        </div>
-      </section>
-
-      {/* Breadcrumb */}
-      <div style={{ padding: "16px 40px", backgroundColor: "#f8f9fa", fontSize: "14px" }}>
-        <a href="/" style={{ color: "#0066cc", textDecoration: "none" }}>Home</a> / <span style={{ color: "#666" }}>Blog</span>
-      </div>
-
-      {/* Posts Grid */}
-      <section style={{ padding: "60px 40px", backgroundColor: "#f8f9fa" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
-          {posts.map((post, i) => (
-            <div key={i} style={{ display: "block", backgroundColor: "#fff", borderRadius: "12px", padding: "28px", boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}>
-              <h2 style={{ fontSize: "18px", fontWeight: 600, color: "#1a3a5c", marginBottom: "8px", lineHeight: 1.4 }}>{post.title}</h2>
-              <p style={{ fontSize: "14px", color: "#888", marginBottom: "12px" }}>{post.date}</p>
-              <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.6, margin: 0 }}>{post.excerpt}</p>
-            </div>
+    <main>
+      <section className="bg-[#1B1F23] text-white py-20 px-4"><div className="max-w-6xl mx-auto"><p className="text-[#DC2626] font-semibold uppercase tracking-wider text-sm mb-4">Technical Resources</p><h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-white">USA PVF Blog</h1><p className="text-xl text-gray-300 max-w-3xl leading-relaxed">Compliance reference and engineering writing for buyers and engineers procuring domestic pipe, valves, and flanges under federal content standards.</p></div></section>
+      <section className="bg-[#F8F6F0] py-16 px-4"><div className="max-w-6xl mx-auto">
+        <div className="grid gap-8">
+          {sorted.map((post) => (
+            <article key={post.slug} className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-wrap items-center gap-4 mb-4 text-sm">
+                <span className="inline-block bg-[#DC2626] text-white px-3 py-1 rounded-full font-semibold uppercase tracking-wide text-xs">{post.category}</span>
+                <span className="text-gray-600">{formatDate(post.date)}</span>
+                <span className="text-gray-400">|</span>
+                <span className="text-gray-600">{post.readTime}</span>
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#1B1F23] mb-4"><Link href={`/blog/${post.slug}`} className="hover:text-[#DC2626] transition-colors">{post.title}</Link></h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">{post.excerpt}</p>
+              <Link href={`/blog/${post.slug}`} className="inline-flex items-center text-[#DC2626] font-semibold hover:underline">Read the full article<span className="ml-2" aria-hidden="true">&rarr;</span></Link>
+            </article>
           ))}
         </div>
-      </section>
-
-      {/* Footer */}
-      <footer style={{ padding: "40px", backgroundColor: "#111", color: "#ccc", textAlign: "center" }}>
-        <p style={{ marginBottom: "8px" }}>
-          <a href="https://texasflange.com/?ref=usapvf" style={{ color: "#93c5fd", textDecoration: "none" }}>Texas Flange</a> {" | "}
-          <a href="https://texasflange.com/contact-us?ref=usapvf" style={{ color: "#93c5fd", textDecoration: "none" }}>Request a Quote</a>
-        </p>
-        <p style={{ fontSize: "13px", color: "#888" }}>&copy; 2025 USA PVF. All rights reserved.</p>
-      </footer>
-
-      {/* Structured Data - BreadcrumbList */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://usapvf.com" },
-              { "@type": "ListItem", position: 2, name: "Blog", item: "https://usapvf.com/blog" },
-            ],
-          }),
-        }}
-      />
-    </>
+      </div></section>
+      <section className="bg-[#DC2626] py-16 px-4"><div className="max-w-4xl mx-auto text-center text-white"><h2 className="font-display text-4xl font-bold mb-4">Have a compliance project?</h2><p className="text-xl mb-8">We supply American-sourced flanges, valves, and fittings with BAA, BABA, and AIS documentation. Send the spec and we will quote.</p><div className="flex flex-wrap justify-center gap-4"><a href="tel:+12814848325" className="inline-block bg-white text-[#DC2626] px-8 py-4 rounded font-semibold hover:bg-[#F8F6F0] transition-colors">(281) 484-8325</a><a href="mailto:sales@texasflange.com" className="inline-block border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-[#DC2626] transition-colors">sales@texasflange.com</a></div></div></section>
+    </main>
   );
 }

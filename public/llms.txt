@@ -1,22 +1,51 @@
 # USA PVF
-> USA piping, valves & flanges distributor
+
+> American-made pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final fabrication. API 6A pipeline pressure classes, ASME B16.5 and B16.47 dimensional reference, and the documentation packages that federally funded and federally procured projects require.
 
 ## About
-Leading USA distributor of piping, valves, and flanges for industrial customers. Fast shipping and support. We provide industry-leading usa distribution with exceptional quality and expert support. Serving the Houston Metro with products that meet or exceed ASME, ANSI, and API standards.
 
-## Contact
-- Phone: 281-484-8325
-- Email: sales@texasflange.com
-- Website: https://texasflange.com
+USA PVF supplies domestically manufactured flanges, fittings, and valves for projects that have domestic content requirements. Buy American Act, Build America Buy America, and American Iron and Steel program compliance is the core offering. Mill test reports, manufacturer certifications, and project-specific compliance letters ship with every order.
 
-## Services
-- USA Distribution supply and distribution
-- Custom flange manufacturing
-- Technical consulting
-- Rush order fulfillment
+## Products
+
+- Flanges: weld neck, blind, slip-on, threaded, socket weld, lap joint, reducing, orifice, spectacle blind. Sizes 1/2 inch through 60 inches and custom over 60.
+- Pipe fittings: butt-weld, socket-weld, threaded. Elbows, tees, reducers, caps, couplings.
+- Valves: gate, globe, check, ball, butterfly for piping system service.
+- Custom machining: non-standard bores, special facings, RTJ grooves, weld overlay, hard facing.
 
 ## Standards
-- ASME B16.5, B16.47
-- ANSI standards
-- API 605, 6A
-- AWWA C207
+
+- ASME B16.5 (1/2 inch through 24 inch flanges)
+- ASME B16.47 Series A and B (26 inch through 60 inch)
+- API 6A (wellhead and pressure control, 2000# through 25000#)
+- API 6BX (high pressure 6A flanges)
+- AWWA C207 (waterworks, Class B, D, E, F)
+- ANSI B16.1 (cast iron and plate retrofit)
+- DIN EN 1092-1 (metric)
+- NACE MR0175 (sour service)
+- MSS SP-44 (pipeline flanges)
+
+## Materials
+
+- Carbon: A105, A350 LF2, A350 LF3, A516-70, A36, A694 F42 through F70
+- Stainless: F304, F304L, F316, F316L, F321, F347
+- Chrome-moly alloy: F11, F22, F91, F92
+- Duplex and super duplex: 2205, 2507
+- Nickel alloys: Inconel 625, Hastelloy C-276, Monel 400
+
+## Compliance
+
+- BAA (Buy American Act) - direct federal procurement
+- BABA (Build America Buy America) - federal infrastructure funding
+- AIS (American Iron and Steel) - EPA SRF and USDA Rural Development
+- ARRA - American Recovery and Reinvestment Act legacy compliance
+- Domestic melt and domestic fabrication verification
+- Mill test reports traceable to heat number
+- EN 10204 3.1 and 3.2 certifications available
+
+## Contact
+
+- Phone: (281) 484-8325
+- Email: sales@texasflange.com
+- Mailing: PO Box 2889, Pearland, TX 77588
+- Hours: Monday through Friday, 8 AM to 5 PM CST
