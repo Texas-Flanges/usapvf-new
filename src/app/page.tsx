@@ -21,12 +21,20 @@ const faqs = [
     a: "American Iron and Steel applies to EPA State Revolving Fund water and wastewater projects and certain USDA Rural Development water projects. Every manufacturing step from melting through final production must occur in the United States. For practical purposes the AIS standard is identical to BABA for iron and steel products. The documentation package and the supply chain requirements are the same."
   },
   {
+    q: "How do I know which standard applies to my project?",
+    a: "It depends on the funding source. Direct federal purchases fall under BAA. Federally funded infrastructure projects fall under BABA. EPA SRF and certain USDA water program projects fall under AIS. Your project owner or contracting officer can confirm which standard applies."
+  },
+  {
     q: "Do you supply API 6A flanges for pipeline service?",
     a: "Yes. Our API 6A supply chain covers 2000 pound, 3000 pound, and 5000 pound class flanges for production and wellhead service, with 6BX availability in 10000, 15000, and 20000 pound class for high pressure applications. For strict API procurement we can source PSL-3 and PSL-4 product specification levels with the additional documentation and inspection coverage those PSLs require. Ring type joint facings with the correct ring gaskets ship together. Call (281) 484-8325 with the wellhead spec and we will confirm grade and rating."
   },
   {
     q: "Can a domestic flange be made from imported steel under BABA?",
     a: "No. Under BABA and AIS the steel must be melted in the United States. A flange forged domestically from foreign-melted steel does not qualify. The mill test report must trace the heat to a domestic mill. Our compliance documentation package includes that traceability as a default for BABA and AIS orders."
+  },
+  {
+    q: "What documentation do you provide for compliant orders?",
+    a: "We provide mill test reports (MTRs) with domestic melt verification, manufacturer certifications of domestic production, and project-specific compliance letters tailored to the applicable standard."
   },
   {
     q: "What is your typical lead time for compliant orders?",

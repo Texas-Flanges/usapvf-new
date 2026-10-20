@@ -35,7 +35,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-gray-700 text-xs text-gray-400">
-        &copy; {new Date().getFullYear()} USA PVF. All rights reserved.
+        &copy; {new Date().getFullYear()} USA PVF. All rights reserved. A resource by{" "}
+        <a href="https://texasflange.com/domestic-vs-import/?ref=usapvf" className="text-gray-300 hover:underline">
+          Texas Flange
+        </a>
       </div>
     </footer>
   );
