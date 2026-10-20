@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-const BASE = "https://usapvf-new.vercel.app";
+const BASE = "https://usapvf.com";
 const industries = ["oil-gas","petrochemical","power-generation","waterworks","chemical-processing","mining","pulp-paper","food-beverage","agriculture","hvac","marine","data-centers"];
 const blogSlugs = ["baa-baba-ais-the-domestic-content-rules-engineers-need-to-know","domestic-melt-vs-domestic-manufacture-why-the-distinction-matters","api-6a-flanges-a-practical-spec-guide-for-pipeline-and-wellhead-service"];
 export default function sitemap(): MetadataRoute.Sitemap {

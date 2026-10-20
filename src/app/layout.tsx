@@ -12,14 +12,15 @@ export const metadata: Metadata = {
     "American-sourced pipe, valves, and flanges with full BAA, BABA, and AIS compliance documentation. Domestic melt traced through final production. API 6A pipeline pressure ratings, ASME B16.5 dimensional reference, and the paperwork to prove every spec. Supplying domestic-content PVF since 1986.",
   keywords:
     "USA PVF, American-sourced flanges, BAA compliant flanges, BABA flanges, AIS flanges, domestic melt, Buy American flanges, API 6A flanges, pipeline flanges, ASME B16.5, ASME B16.47, MTR documentation, IIJA flanges, federal infrastructure",
-  metadataBase: new URL("https://usapvf-new.vercel.app"),
+  metadataBase: new URL("https://usapvf.com"),
+  alternates: { canonical: "./" },
   openGraph: {
     type: "website",
     siteName: "USA PVF",
     title: "USA PVF | American-Sourced PVF with Compliance Documentation",
     description:
       "Domestically sourced pipe, valves, and flanges. BAA, BABA, AIS documented from melt through final production.",
-    url: "https://usapvf-new.vercel.app"
+    url: "https://usapvf.com"
   },
   robots: { index: true, follow: true }
 };
@@ -42,8 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "USA PVF",
-              url: "https://usapvf-new.vercel.app",
-              logo: "https://usapvf-new.vercel.app/logo.png",
+              url: "https://usapvf.com",
+              logo: "https://usapvf.com/logo.png",
               description:
                 "American-sourced pipe, valves, and flanges with BAA, BABA, and AIS compliance documentation. Domestic melt and domestic production for federally funded and federally procured projects. Supplying domestic-content PVF since 1986.",
               telephone: "+1-281-484-8325",

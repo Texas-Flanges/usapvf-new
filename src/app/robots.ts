@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "PerplexityBot", allow: "/" },
       { userAgent: "Bytespider", disallow: "/" }
     ],
-    sitemap: "https://usapvf-new.vercel.app/sitemap.xml"
+    sitemap: "https://usapvf.com/sitemap.xml"
   };
 }

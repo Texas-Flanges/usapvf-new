@@ -8,13 +8,13 @@ export default function CadDrawingsPage() {
       <p className="text-lg text-gray-700 leading-relaxed">The parent dimensional library at texasflange.com has CAD drawings for the major ASME B16.5 flange types across every size and pressure class, plus selected ASME B16.47 large diameter, AWWA C207 waterworks, and API 6A wellhead service. Drawings download as DWG, DXF, STEP, and IGES depending on file.</p>
       <h2 className="font-display text-3xl font-bold text-ink">Direct Links</h2>
       <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
-        <li><a href="https://www.texasflange.com/cad-3d-flange-drawings/?ref=usapvf-new" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">CAD library main page</a></li>
-        <li><a href="https://www.texasflange.com/flange-drawings-models2/weld-neck/?ref=usapvf-new" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Weld neck flange drawings</a></li>
-        <li><a href="https://www.texasflange.com/flange-drawings-models2/blind/?ref=usapvf-new" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Blind flange drawings</a></li>
-        <li><a href="https://www.texasflange.com/flange-drawings-models2/slip-on/?ref=usapvf-new" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Slip-on flange drawings</a></li>
-        <li><a href="https://www.texasflange.com/flange-drawings-models2/threaded/?ref=usapvf-new" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Threaded flange drawings</a></li>
-        <li><a href="https://www.texasflange.com/flange-drawings-models2/socket-weld/?ref=usapvf-new" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Socket weld flange drawings</a></li>
-        <li><a href="https://www.texasflange.com/flange-drawings-models2/lap-joint/?ref=usapvf-new" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Lap joint flange drawings</a></li>
+        <li><a href="https://www.texasflange.com/cad-3d-flange-drawings/?ref=usapvf" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">CAD library main page</a></li>
+        <li><a href="https://www.texasflange.com/flange-drawings-models2/weld-neck/?ref=usapvf" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Weld neck flange drawings</a></li>
+        <li><a href="https://www.texasflange.com/flange-drawings-models2/blind/?ref=usapvf" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Blind flange drawings</a></li>
+        <li><a href="https://www.texasflange.com/flange-drawings-models2/slip-on/?ref=usapvf" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Slip-on flange drawings</a></li>
+        <li><a href="https://www.texasflange.com/flange-drawings-models2/threaded/?ref=usapvf" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Threaded flange drawings</a></li>
+        <li><a href="https://www.texasflange.com/flange-drawings-models2/socket-weld/?ref=usapvf" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Socket weld flange drawings</a></li>
+        <li><a href="https://www.texasflange.com/flange-drawings-models2/lap-joint/?ref=usapvf" target="_blank" rel="noopener" className="text-[#DC2626] font-semibold">Lap joint flange drawings</a></li>
       </ul>
       <h2 className="font-display text-3xl font-bold text-ink">Custom Drawing Requests</h2>
       <p className="text-lg text-gray-700 leading-relaxed">For custom flange dimensions, hubbed plate flanges, weld overlay configurations, or non-standard bolt patterns, send dimensions to <a href="mailto:sales@texasflange.com">sales@texasflange.com</a> or call <a href="tel:2814848325">(281) 484-8325</a>. We work the drawing during the quoting process.</p>
