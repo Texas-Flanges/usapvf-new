@@ -49,8 +49,16 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
-      <section className="bg-[#1B1F23] text-white py-24 px-4">
-        <div className="max-w-6xl mx-auto">
+      <section
+        className="bg-[#1B1F23] text-white py-24 px-4 relative overflow-hidden bg-cover"
+        style={{
+          backgroundImage:
+            'linear-gradient(90deg, rgba(27,31,35,0.96) 0%, rgba(27,31,35,0.88) 45%, rgba(27,31,35,0.35) 100%), url(/usapvf-hero.jpg)',
+          backgroundPosition: 'right center',
+        }}
+      >
+        <div aria-hidden="true" className="absolute inset-0 bg-[#1B1F23]/75 md:hidden" />
+        <div className="relative max-w-6xl mx-auto">
           <p className="text-[#DC2626] uppercase tracking-widest text-sm font-semibold mb-4">
             Domestic Melt. Domestic Production. Documented.
           </p>
