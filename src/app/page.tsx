@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import RelatedResources from "@/components/RelatedResources";
 
 export const metadata: Metadata = {
   title: "USA PVF | American-Sourced Flanges, Valves, and Fittings with Compliance Documentation",
@@ -312,6 +313,8 @@ export default function HomePage() {
           <p className="text-white/80 text-sm mt-8">PO Box 2889, Pearland, TX 77588 | Supplying domestic-content PVF since 1986</p>
         </div>
       </section>
+
+      <RelatedResources />
     </>
   );
 }

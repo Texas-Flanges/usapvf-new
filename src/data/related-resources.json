@@ -1,0 +1,31 @@
+{
+  "site": "usapvf.com",
+  "heading": "Related resources",
+  "links": [
+    {
+      "url": "https://texasflange.com/?ref=usapvf",
+      "label": "Texas Flange & Fitting Supply",
+      "note": "Stock, pricing and quotes on flanges and PVF"
+    },
+    {
+      "url": "https://pvfplanet.com/",
+      "label": "PVF information center (PVFPlanet.com)",
+      "note": "Pipe, valve and fitting guides for buyers"
+    },
+    {
+      "url": "https://pipingflange.com/",
+      "label": "Piping and PVF flange guide (PipingFlange.com)",
+      "note": "Flanges in the context of full piping systems"
+    },
+    {
+      "url": "https://www.flangeandfittings.com/",
+      "label": "Flanges & fittings resource (FlangeAndFittings.com)",
+      "note": "Flange and fitting types side by side"
+    },
+    {
+      "url": "https://steelflange.com/",
+      "label": "Forged and plate steel flanges (SteelFlange.com)",
+      "note": "Steel flange types made from forgings and plate"
+    }
+  ]
+}
